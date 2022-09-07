@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.clean-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    }
+
+/* Track */
+.clean-scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.103);
+
+}
+
+/* Handle */
+.clean-scrollbar::-webkit-scrollbar-thumb {
+    background: #4f5d91;
+    border-radius: 5px;
+    border: 4.5px solid transparent;
+    background-clip: content-box;
+    transition: all 0.3s;
+}
+
+/* Handle on hover */
+.clean-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #4f5d91;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+nav.navbar{
+    padding: 10px 100px 10px 100px;
+    background-color: #399A19;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.o-input{
+    height: 35px;
+    width: 235px;
+    padding-left: 40px;
+    border: 1px solid #399a19;
+    border-radius: 5px;
+}
+
+.navbar .fa-search{
+    margin-right: -30px;
+    z-index: 1;
+}
+
+.nav-content{
+    margin-left: 75px;
+}
+
+.navbar-brand{
+    font-size: 28px !important;
+    font-weight: 600;
+}
+
+.navbar-brand-logo{
+    height: 55px;
+}
+
+.navbar .nav-item.active{
+    border-bottom: 3px solid #FFA010;
+}
+
+.navbar .nav-link{
+    color: #fff !important;
+    font-size: 14px;
+}
+
+.navbar .nav-item{
+    margin: 5px;
+}
+
+.navbar .nav-avatar{
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.navbar .nav-avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar .dropdown-menu{
+    top: 135%;
+    width: 200px;
+    left: -5px;
+    border-radius: 5px;
+    padding: 5px 10px 0 10px;
+}
+
+.navbar .dropdown-item{
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #399a1963;
+    color: #399A19;
+    transition: all 0.5s;
+}
+
+.navbar .dropdown-item:hover{
+    padding-left: 20px !important;
+    background-color: unset;
+    color: #286913;
+}
+
+.nav-circle{
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 4px !important;
+}
+
+.hero{
+    background-image: url('../img/sp-main-bg.jpg');
+    background-size: cover;
+}
+
+/* Welcome Page CSS */
+.hero-overlay{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #92afd7f2 0%, #d0dbd4f2 37%, #dadadaf2 50%, #cdced0f2 64%, #92afd7f2 100%);
+    background-size: 500%;
+    animation: bg-animation 35s infinite;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
+}
+
+.new-nav{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.new-nav .nav-names{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-names.left{
+    background: #fff;
+    color: #033F63;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 10px;
+    line-height: 2;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 15px;
+}
+
+.nav-names.right{
+    background: #fff;
+    color: #033F63;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 30px;
+    line-height: 2;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 15px;
+}
+
+.hero-bottom{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.hero-bottom .bottom-line{
+    background: #033F63;
+    height: 80px;
+    width: 100%;
+}
+
+.hero-bottom .bottom-line p{
+    margin-bottom: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    line-height: 5rem;
+    font-weight: 300;
+    letter-spacing: 25px;
+}
+
+.hero-bottom p{
+    font-size: 85px;
+    letter-spacing: 10px;
+    margin-bottom: -25px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #f0f8ff;
+    padding-left: 40px;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.hero .content-div{
+    position:absolute;
+    top: 20px;
+    width: 100%;
+}
+
+.hero .content-div img{
+    position: absolute;
+    left: 26%;
+    height: 350%;
+    top: 90px;
+}
+
+.hero .content-div .vote-text{
+    font-size: 150px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    letter-spacing: 35px;
+    color: #02324e;
+    padding-left: 20px;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+/* Main Content */
+.main-page{
+    background: #e4f4ff;
+    height: 100vh;
+    position: relative;
+}
