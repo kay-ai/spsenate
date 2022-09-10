@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Nunito', sans-serif !important;
+    overflow-x: hidden;
 }
 
 .clean-scrollbar::-webkit-scrollbar {
@@ -240,7 +241,7 @@ nav.navbar{
 
 @media screen and (max-width: 500px) {
     .hero .content-div img {
-        left: -2% !important;
+        left: -3vh !important;
         height: 75vh !important;
         top: 60px !important;
     }
@@ -290,9 +291,159 @@ nav.navbar{
     }
 }
 
+.badges{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    top: 70px;
+}
+
+.badges .words{
+    display: block;
+    position: absolute;
+    font-size: 2vw;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.badges .words.left.one{
+    left: 20%;
+    top: 50%;
+    animation: fadeInOut1 50s ease reverse forwards infinite;
+    opacity: 0;
+}
+
+.badges .words.right.one{
+    right: 20%;
+    top: 50%;
+    animation: fadeInOut1 50s ease reverse forwards infinite;
+    animation-delay: 2500ms;
+    opacity: 0;
+}
+
+.badges .words.left.two{
+    left: 10%;
+    top: 60%;
+    animation: fadeInOut2 50s ease reverse forwards infinite;
+    opacity: 0;
+}
+
+.badges .words.right.two{
+    right: 15%;
+    top: 60%;
+    animation: fadeInOut2 50s ease reverse forwards infinite;
+    animation-delay: 2500ms;
+    opacity: 0;
+}
+
+.badges .words.left.three{
+    left: 10%;
+    top: 75%;
+    animation: fadeInOut3 50s ease reverse forwards infinite;
+    opacity: 0;
+}
+
+.badges .words.right.three{
+    right: 10%;
+    top: 75%;
+    animation: fadeInOut3 50s ease reverse forwards infinite;
+    animation-delay: 2500ms;
+    opacity: 0;
+}
+
+.badges .words.left.four{
+    left: 5%;
+    top: 35%;
+    animation: fadeInOut4 50s ease reverse forwards infinite;
+    opacity: 0;
+}
+
+.badges .words.right.four{
+    right: 5%;
+    top: 35%;
+    animation: fadeInOut4 50s ease reverse forwards infinite;
+    animation-delay: 2500ms;
+    opacity: 0;
+}
+
+.badges .words.left.five{
+    left: 10%;
+    top: 90%;
+    animation: fadeInOut5 50s ease reverse forwards infinite;
+    animation-delay: 1000ms;
+    opacity: 0;
+}
+
+.badges .words.right.five{
+    right: 10%;
+    top: 90%;
+    animation: fadeInOut5 50s ease reverse forwards infinite;
+    animation-delay: 3000ms;
+    opacity: 0;
+}
+
+.badges .words.left.six{
+    left: 5%;
+    top: 105%;
+    animation: fadeInOut6 50s ease reverse forwards infinite;
+    opacity: 0;
+    animation-delay: 1500ms;
+}
+
+@keyframes fadeInOut1 {
+    0% { opacity: 0 }
+    1% { opacity: 1 }
+    14% {opacity: 1 }
+    16% { opacity: 0 }
+}
+
+@keyframes fadeInOut2 {
+    0% { opacity: 0 }
+    14% {opacity: 0 }
+    16% { opacity: 1 }
+    30% { opacity: 1 }
+    33% { opacity: 0 }
+}
+
+@keyframes fadeInOut3 {
+    0% { opacity: 0 }
+    30% {opacity: 0 }
+    33% {opacity: 1 }
+    46% { opacity: 1 }
+    48% { opacity: 0 }
+}
+
+@keyframes fadeInOut4 {
+    0% { opacity: 0 }
+    46% { opacity: 0 }
+    48% { opacity: 1 }
+    64% { opacity: 1 }
+    65% { opacity: 0 }
+}
+
+@keyframes fadeInOut5 {
+    0% { opacity: 0 }
+    64% { opacity: 0 }
+    66% { opacity: 1 }
+    80% { opacity: 1 }
+    83% { opacity: 0 }
+}
+
+@keyframes fadeInOut6 {
+    80% { opacity: 0; transform: translateX(10px); }
+    83% { opacity: 1 }
+    99% { opacity: 1 }
+    100% { opacity: 0 }
+}
+
 @media screen and (max-width: 1000px) {
+    .hero-overlay{
+        background-size: 300%;
+    }
+
     .hero .content-div img {
-        left: -2%;
+        left: -3vw;
         height: 125vw;
         top: 100px;
     }

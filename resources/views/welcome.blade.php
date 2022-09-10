@@ -14,6 +14,19 @@
             </div>
             <div class="content-div">
                 <p class="vote-text">VOTE</p>
+                <div class="badges">
+                    <span class="words left one">An Entreprenuer</span>
+                    <span class="words right one">A Peace Maker</span>
+                    <span class="words left two">Organizer Peller Unity Cup</span>
+                    <span class="words right two">A Businessman</span>
+                    <span class="words left three">The Ayedero of Yoruba Land</span>
+                    <span class="words right three">The Akinrogun of Epe Land</span>
+                    <span class="words left four">The Mayegun of Igbobi-Sabe</span>
+                    <span class="words right four">Aare Gbobaniyi of Iseyin</span>
+                    <span class="words left five">A Philanthropist</span>
+                    <span class="words right five">Founder AQUILA GROUP</span>
+                    <span class="words left six">A Leader</span>
+                </div>
                 <img src="{{asset('img/sp-bg.png')}}">
             </div>
             <div class="hero-bottom shadow-sm">
