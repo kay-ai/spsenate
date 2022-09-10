@@ -450,6 +450,9 @@ nav.navbar{
 
     .hero .content-div {
         top: 10vh;
+        width: 100vw;
+        height: calc(100vh - 130px);
+        overflow: hidden;
     }
 
     .hero-bottom p {
