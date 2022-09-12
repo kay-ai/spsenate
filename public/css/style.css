@@ -470,6 +470,64 @@ nav.navbar{
     .nav-names.right {
         padding-right: 45px;
     }
+
+    .badges .words.left.one{
+        left: 5%;
+        top: 50%;
+
+    }
+
+    .badges .words.right.one{
+        right: 5%;
+        top: 50%;
+    }
+
+    .badges .words.left.two{
+        left: 3%;
+        top: 64%;
+    }
+
+    .badges .words.right.two{
+        right: 15%;
+        top: 45%;
+    }
+
+    .badges .words.left.three{
+        left: 5%;
+        top: 0%;
+
+    }
+
+    .badges .words.right.three{
+        right: 6%;
+        top: 25%;
+    }
+
+    .badges .words.left.four{
+        left: 2%;
+        top: 64%;
+
+    }
+
+    .badges .words.right.four{
+        right: 5%;
+        top: 35%;
+    }
+
+    .badges .words.left.five{
+        left: 6%;
+        top: 50%;
+    }
+
+    .badges .words.right.five{
+        right: 5%;
+        top: 30%;
+    }
+
+    .badges .words.left.six{
+        left: 5%;
+        top: 70%;
+    }
 }
 
 
