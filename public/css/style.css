@@ -124,6 +124,7 @@ nav.navbar{
 .hero{
     background-image: url('../img/sp-main-bg.jpg');
     background-size: cover;
+    height: 100vh;
 }
 
 /* Welcome Page CSS */
