@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
 
         {{-- Custom Css --}}
-        <link rel="stylesheet" href="{{asset('css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('css/style.css?v='.now())}}">
 
         {{-- Font Awesome --}}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
