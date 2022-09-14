@@ -34,7 +34,7 @@ body{
 
 nav.navbar{
     padding: 10px 100px 10px 100px;
-    background-color: #399A19;
+    background-color: #033F63;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -44,7 +44,7 @@ nav.navbar{
     height: 35px;
     width: 235px;
     padding-left: 40px;
-    border: 1px solid #399a19;
+    border: 1px solid #033F63;
     border-radius: 5px;
 }
 
@@ -58,12 +58,12 @@ nav.navbar{
 }
 
 .navbar-brand{
-    font-size: 28px !important;
+    font-size: 1.5vw !important;
     font-weight: 600;
 }
 
 .navbar-brand-logo{
-    height: 55px;
+    height: 45px;
 }
 
 .navbar .nav-item.active{
@@ -102,15 +102,15 @@ nav.navbar{
     padding: 8px 10px;
     font-size: 14px;
     font-weight: 700;
-    border-bottom: 1px solid #399a1963;
-    color: #399A19;
+    border-bottom: 1px solid #033F6363;
+    color: #033F63;
     transition: all 0.5s;
 }
 
 .navbar .dropdown-item:hover{
     padding-left: 20px !important;
     background-color: unset;
-    color: #286913;
+    color: #032f4b;
 }
 
 .nav-circle{
@@ -536,6 +536,10 @@ nav.navbar{
 /* Main Content */
 .main-page{
     background: #f0f8ff;
-    height: 100vh;
     position: relative;
+    padding-top: 100px;
+}
+
+.main-page .volunteer{
+    height: 100vh;
 }

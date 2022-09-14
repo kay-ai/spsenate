@@ -1,7 +1,6 @@
 @extends('layouts.app', [$pageTitle = 'SP | Welcome', $activePage = 'Welcome'])
 
 @section('content')
-
     <section class="hero">
         <div class="hero-overlay">
             <div class="new-nav d-flex justify-content-between">
@@ -38,7 +37,16 @@
         </div>
     </section>
     <section class="main-page">
+        <div class="volunteer">
+            <div class="row justify-content-center p-5">
+                <div class="col-md-6"></div>
+                <div class="col-md-6 p-5">
+                    <div class="card mt-5 shadow" style="background: #fff; height: 400px; border-radius: 10px;">
 
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection
 
