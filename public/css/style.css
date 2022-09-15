@@ -3,6 +3,19 @@
 body{
     font-family: 'Nunito', sans-serif !important;
     overflow-x: hidden;
+    background-image: url('../img/sp-main-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-container{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+.section{
+    scroll-snap-align: start;
 }
 
 .clean-scrollbar::-webkit-scrollbar {
@@ -122,15 +135,14 @@ nav.navbar{
 }
 
 .hero{
-    background-image: url('../img/sp-main-bg.jpg');
-    background-size: cover;
     height: 100vh;
 }
 
 /* Welcome Page CSS */
 .hero-overlay{
+    overflow: hidden;
     height: 100vh;
-    display: flex;
+    display: relative;
     justify-content: center;
     background-image: linear-gradient(45deg, #92afd7f2 0%, #d0dbd4f2 37%, #dadadaf2 50%, #cdced0f2 64%, #92afd7f2 100%);
     background-size: 500%;
@@ -216,20 +228,20 @@ nav.navbar{
     text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
-.hero .content-div{
-    position:absolute;
-    top: 20px;
+.hero-overlay .content-div{
+    position: relative;
+    top: -110px;
     width: 100%;
 }
 
-.hero .content-div img{
+.hero-overlay .content-div img{
     position: absolute;
     left: 26%;
     height: 350%;
     top: 90px;
 }
 
-.hero .content-div .vote-text{
+.hero-overlay .content-div .vote-text{
     font-size: 150px;
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -240,35 +252,26 @@ nav.navbar{
     text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
-@media screen and (max-width: 500px) {
-    .hero .content-div img {
-        left: -3vh !important;
-        height: 75vh !important;
-        top: 60px !important;
+@media screen and (max-width: 1000px) {
+    .hero-overlay{
+        background-size: 300%;
     }
 
-    .hero .content-div .vote-text {
-        font-size: 90px !important;
-        text-align: center;
-        font-weight: 900;
-        letter-spacing: 15px !important;
+    .hero-overlay .content-div img {
+        left: -3vw;
+        height: 125vw;
+        top: 100px;
     }
 
-    .hero .content-div {
-        top: 12vh !important;
-        width: 100%;
+    .hero-overlay .content-div {
+        top: -8vh;
+        width: 100vw;
+        height: calc(100vh - 130px);
+        overflow: hidden;
     }
 
     .hero-bottom p {
-        font-size: 12vw !important;
-        letter-spacing: 4px !important;
-        margin-bottom: -10px !important;
         padding-left: unset;
-    }
-
-    .hero-bottom .bottom-line p {
-        font-size: 3vw !important;
-        letter-spacing: 10px !important;
     }
 
     .new-nav {
@@ -276,19 +279,135 @@ nav.navbar{
     }
 
     .nav-names.left {
-        height: 30px !important;
-        padding-left: 8px !important;
-        padding-right: 10px !important;
+        padding-left: 15px;
     }
 
     .nav-names.right {
-        height: 30px !important;
-        padding-left: 15px !important;
-        padding-right: 35px !important;
+        padding-right: 45px;
+    }
+
+    .badges .words.left.one{
+        left: 5%;
+        top: 50%;
+
+    }
+
+    .badges .words.right.one{
+        right: 5%;
+        top: 50%;
+    }
+
+    .badges .words.left.two{
+        left: 3%;
+        top: 64%;
+    }
+
+    .badges .words.right.two{
+        right: 15%;
+        top: 45%;
+    }
+
+    .badges .words.left.three{
+        left: 5%;
+        top: 0%;
+
+    }
+
+    .badges .words.right.three{
+        right: 6%;
+        top: 25%;
+    }
+
+    .badges .words.left.four{
+        left: 2%;
+        top: 64%;
+
+    }
+
+    .badges .words.right.four{
+        right: 5%;
+        top: 35%;
+    }
+
+    .badges .words.left.five{
+        left: 6%;
+        top: 50%;
+    }
+
+    .badges .words.right.five{
+        right: 5%;
+        top: 30%;
+    }
+
+    .badges .words.left.six{
+        left: 5%;
+        top: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-overlay .content-div img {
+        left: -3vh ;
+        height: 75vh ;
+        top: 60px ;
+    }
+
+    .hero-overlay .content-div .vote-text {
+        font-size: 90px;
+        text-align: center;
+        font-weight: 900;
+        letter-spacing: 15px;
+    }
+
+    .hero-overlay .content-div {
+        top: -10vh;
+        width: 100%;
+    }
+
+    .hero-bottom p {
+        font-size: 12vw;
+        letter-spacing: 4px;
+        margin-bottom: -10px;
+        padding-left: unset;
+    }
+
+    .hero-bottom .bottom-line p {
+        font-size: 3vw;
+        letter-spacing: 10px;
+    }
+
+    .new-nav {
+        margin-top: 7vh;
+    }
+
+    .nav-names.left {
+        height: 30px;
+        padding-left: 8px;
+        padding-right: 10px;
+    }
+
+    .nav-names.right {
+        height: 30px;
+        padding-left: 15px;
+        padding-right: 35px;
     }
 
     .new-nav .nav-names {
-        font-size: 15px !important;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero-overlay .content-div img {
+        left: 4vh;
+    }
+
+    .hero-bottom .bottom-line {
+        height: 60px;
+    }
+
+    .hero-bottom .bottom-line p {
+        line-height: 4rem;
     }
 }
 
@@ -438,108 +557,135 @@ nav.navbar{
     100% { opacity: 0 }
 }
 
-@media screen and (max-width: 1000px) {
-    .hero-overlay{
-        background-size: 300%;
-    }
 
-    .hero .content-div img {
-        left: -3vw;
-        height: 125vw;
-        top: 100px;
-    }
-
-    .hero .content-div {
-        top: 10vh;
-        width: 100vw;
-        height: calc(100vh - 130px);
-        overflow: hidden;
-    }
-
-    .hero-bottom p {
-        padding-left: unset;
-    }
-
-    .new-nav {
-        margin-top: 7vh;
-    }
-
-    .nav-names.left {
-        padding-left: 15px;
-    }
-
-    .nav-names.right {
-        padding-right: 45px;
-    }
-
-    .badges .words.left.one{
-        left: 5%;
-        top: 50%;
-
-    }
-
-    .badges .words.right.one{
-        right: 5%;
-        top: 50%;
-    }
-
-    .badges .words.left.two{
-        left: 3%;
-        top: 64%;
-    }
-
-    .badges .words.right.two{
-        right: 15%;
-        top: 45%;
-    }
-
-    .badges .words.left.three{
-        left: 5%;
-        top: 0%;
-
-    }
-
-    .badges .words.right.three{
-        right: 6%;
-        top: 25%;
-    }
-
-    .badges .words.left.four{
-        left: 2%;
-        top: 64%;
-
-    }
-
-    .badges .words.right.four{
-        right: 5%;
-        top: 35%;
-    }
-
-    .badges .words.left.five{
-        left: 6%;
-        top: 50%;
-    }
-
-    .badges .words.right.five{
-        right: 5%;
-        top: 30%;
-    }
-
-    .badges .words.left.six{
-        left: 5%;
-        top: 70%;
-    }
-}
 
 
 
 /* Main Content */
 .main-page{
-    background: #f0f8ff;
+    background: #f9fafbf0;
     position: relative;
-    padding-top: 100px;
+    padding : 100px;
 }
 
 .main-page .volunteer{
     height: 100vh;
+}
+
+.heading-1{
+    font-size: 95px;
+    font-weight: 900;
+    margin-top: -35px;
+    margin-left: -55px;
+    color: #8080802e;
+}
+
+.heading-1 span{
+    color: #FFA010;
+}
+
+.o-card{
+    background: #fff;
+    border-radius: 10px !important;
+    border:none !important;
+}
+
+.quote{
+    font-size: 52px;
+    font-weight: 600;
+    color: #afa6a6;
+    padding-right: 80px;
+    margin-top: 30px;
+}
+
+.author{
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFA010;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.author span{
+    color: #032f4b;
+    font-weight: 900;
+}
+
+.form-control:focus {
+    color: #FFA010 !important;
+    border-color: #033f63 !important;
+    box-shadow: 0 0 0 0.2rem rgb(3 63 99 / 5%) !important;
+}
+
+.form-control{
+    height: calc(1.5em + 1.5rem + 2px) !important;
+    border-radius: 0.5rem !important;
+}
+
+.o-btn{
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+}
+
+.o-btn:hover{
+    text-decoration: none;
+}
+
+.o-btn-primary-opp{
+    color: #032f4b;
+    background-color: #efe8e3;
+    transition: all 0.7s;
+}
+
+.o-btn-primary-opp:hover{
+    color: #212529;
+    background-color: #FFA010;
+}
+
+.o-btn-primary-opp:focus {
+    box-shadow: 0 0 0 0.2rem rgb(222 170 12 / 12%);
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #032f4b !important;
+    border-color: #032f4b !important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+    box-shadow: unset;
+}
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: unset;
+}
+
+@media screen and (max-width: 500px) {
+
+    .main-page{
+        padding: 30px;
+    }
+
+    .quote{
+        font-size: 30px;
+        padding-right: unset;
+    }
+
+    .author{
+        font-size: 18px;
+    }
+
+    .heading-1 {
+        font-size: 75px;
+        margin-top: -45px;
+        margin-left: -20px;
+    }
+
+    .join-form-row{
+        padding: 1.5rem;
+    }
+
+    .o-card{
+        margin-top: 25px;
+    }
 }
