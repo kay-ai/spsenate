@@ -70,6 +70,10 @@ nav.navbar{
     margin-left: 75px;
 }
 
+.navbar-dark .navbar-toggler{
+    border-color: #ffffff00 !important;
+}
+
 .navbar-brand{
     font-size: 1.5vw !important;
     font-weight: 600;
@@ -346,6 +350,19 @@ nav.navbar{
 }
 
 @media screen and (max-width: 500px) {
+    nav.navbar{
+        padding: 15px 20px;
+    }
+
+    .navbar-brand{
+        font-size: 1.25rem !important;
+    }
+
+    .nav-content{
+        margin: 0 40px;
+        padding: 15px 0;
+    }
+
     .hero-overlay .content-div img {
         left: -3vh ;
         height: 75vh ;
@@ -558,9 +575,6 @@ nav.navbar{
 }
 
 
-
-
-
 /* Main Content */
 .main-page{
     background: #f9fafbf0;
@@ -569,7 +583,7 @@ nav.navbar{
 }
 
 .main-page .volunteer{
-    height: 100vh;
+    height: 100%;
 }
 
 .heading-1{
