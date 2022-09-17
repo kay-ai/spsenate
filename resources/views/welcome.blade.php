@@ -1,7 +1,7 @@
 @extends('layouts.app', [$pageTitle = 'SP | Welcome', $activePage = 'Welcome'])
 
 @section('content')
-    <div class="section-container">
+    <div class="section-container clean-scrollbar">
         <section class="hero-overlay section">
             <div class="new-nav d-flex justify-content-between">
                 <div class="nav-names left shadow-sm">
@@ -36,7 +36,7 @@
             </div>
         </section>
         <section class="main-page section">
-            <div class="volunteer mt-5 ">
+            <div class="volunteer mt-lg-5 ">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <p class="quote">

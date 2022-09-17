@@ -1,10 +1,11 @@
-
-<nav class="navbar navbar-expand-md navbar-dark sp-fixed-item" style="display: none;">
+<nav class="navbar navbar-expand-md navbar-dark sp-fixed-item " style="display: none;">
     <img class="navbar-brand-logo" src="{{asset('img/senate-logo.png')}}">
     <a class="navbar-brand ml-4" href="#">Hon. Shina Peller</a>
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+    <button id="navbarCollapse" class="navbar-toggler d-lg-none active" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </button>
     <div class="collapse navbar-collapse nav-content" id="collapsibleNavId">
         <ul class="navbar-nav ml-auto">
@@ -21,5 +22,13 @@
     </div>
 </nav>
 <!-- Nav tabs -->
+
+@push('js-bottom')
+    <script>
+        $('#navbarCollapse').on('click', function () {
+            $(this).toggleClass('active');
+        });
+    </script>
+@endpush
 
 

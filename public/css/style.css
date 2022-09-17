@@ -12,20 +12,21 @@ body{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     height: 100vh;
+    overflow: auto;
 }
 
 .section{
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 .clean-scrollbar::-webkit-scrollbar {
     width: 10px;
-    }
+    background-color: #fff;
+}
 
 /* Track */
 .clean-scrollbar::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.103);
-
 }
 
 /* Handle */
@@ -47,10 +48,11 @@ body{
 
 nav.navbar{
     padding: 10px 100px 10px 100px;
-    background-color: #033F63;
+    background-color: #033f631f;
     position: fixed;
     width: 100%;
     z-index: 10;
+    backdrop-filter: blur(20px);
 }
 
 .o-input{
@@ -72,11 +74,53 @@ nav.navbar{
 
 .navbar-dark .navbar-toggler{
     border-color: #ffffff00 !important;
+    border-radius: 15px;
+    padding: 0.25rem 0.3rem !important;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-dark .navbar-toggler:focus{
+    outline: 2px solid #032f4b26;
+}
+
+#navbarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: #555;
+    z-index: 2;
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+
+#navbarCollapse span:first-of-type {
+    /* rotate first one */
+    transform: rotate(45deg) translate(2px, 2px);
+}
+#navbarCollapse span:nth-of-type(2) {
+    /* second one is not visible */
+    opacity: 0;
+}
+#navbarCollapse span:last-of-type {
+    /* rotate third one */
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+#navbarCollapse.active span {
+    /* no rotation */
+    transform: none;
+    /* all bars are visible */
+    opacity: 1;
+    margin: 5px auto;
 }
 
 .navbar-brand{
     font-size: 1.5vw !important;
-    font-weight: 600;
+    font-weight: 800 !important;
+    color: #033F63 !important;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    transition: all 0.5s;
 }
 
 .navbar-brand-logo{
@@ -88,8 +132,9 @@ nav.navbar{
 }
 
 .navbar .nav-link{
-    color: #fff !important;
+    color: #033F63 !important;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .navbar .nav-item{
@@ -146,7 +191,7 @@ nav.navbar{
 .hero-overlay{
     overflow: hidden;
     height: 100vh;
-    display: relative;
+    position: relative;
     justify-content: center;
     background-image: linear-gradient(45deg, #92afd7f2 0%, #d0dbd4f2 37%, #dadadaf2 50%, #cdced0f2 64%, #92afd7f2 100%);
     background-size: 500%;
@@ -610,6 +655,7 @@ nav.navbar{
     color: #afa6a6;
     padding-right: 80px;
     margin-top: 30px;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 .author{
@@ -677,7 +723,7 @@ nav.navbar{
 @media screen and (max-width: 500px) {
 
     .main-page{
-        padding: 50px 30px;
+        padding: 100px 30px;
     }
 
     .quote{
