@@ -69,7 +69,9 @@
                                     <div class="col-md-12">
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label small" for="customCheck1" style="padding-top: 4px;">Stay up to date on our campaign activities</label>
+                                            <label class="custom-control-label small" for="customCheck1" style="padding-top: 4px;">
+                                                Stay up to date with our campaign activities
+                                            </label>
                                         </div>
                                         {{-- <p class="small mb-0" style="padding-top: 2px;">Stay up to date on our campaign activities</p> --}}
                                         <input type="submit" class="o-btn o-btn-primary-opp mt-3 float-right" role="button" value="I'm ready!">
