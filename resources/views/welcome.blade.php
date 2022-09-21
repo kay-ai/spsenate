@@ -8,7 +8,7 @@
                     <p> HON. SHINA PELLER </p>
                 </div>
                 <div class="nav-names right shadow-sm">
-                    <p> FOR SENATE </p>
+                    <p> FOR OYO NORTH </p>
                 </div>
             </div>
             <div class="content-div">
@@ -36,9 +36,9 @@
             </div>
         </section>
         <section class="main-page section">
-            <div class="volunteer mt-lg-5 ">
+            <div class="join-us mt-lg-5 ">
                 <div class="row justify-content-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6 flex-break">
                         <p class="quote">
                             "Bad officials are elected by good citizens who don't vote"
                         </p>
@@ -46,10 +46,10 @@
                         <span>-</span> George Jean Nathan
                         </p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 flex-break">
                         <div class="o-card card shadow">
                             <p class="heading-1"><span>J</span>oin Us</p>
-
+                            <img src="{{asset('img/accord-logo.png')}}" class="accord-logo" alt="accord-logo">
                             <form action="#" method="post">
                                 <div class="join-form-row row p-lg-5 pt-0">
                                     <div class="col-md-12">
@@ -82,6 +82,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+        </section>
+        <section class="main-page sec2 section">
+            <div class="o-card p-5 my-5">
+                <div class="p-5"></div>
+                <div class="p-5 quote">Why Vote For Us</div>
+                <div class="p-5"></div>
             </div>
         </section>
     </div>
