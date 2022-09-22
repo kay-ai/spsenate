@@ -1,35 +1,25 @@
 $(document).ready(function() {
-    if ($('.section-container').scrollTop() > ($(window).height() - 80)) {
-        $(".sp-fixed-item").fadeIn('slow');
-    } else {
-        $(".sp-fixed-item").fadeOut('slow');
-    }
-    $('.section-container').on("scroll", function(e) {
-        if ($('.section-container').scrollTop() > ($(window).height() - 80)) {
-            $(".sp-fixed-item").fadeIn('slow');
+    let container = $('.section-container');
+    let lastScrollY = container.scrollTop();
 
-            function removeNav() {
-                $(".sp-fixed-item").fadeOut('slow');
+    container.on("scroll", function(e) {
+
+        if (container.scrollTop() > ($(window).height())) {
+            if (lastScrollY < container.scrollTop()){ //Scroll Down
+                $('.sp-fixed-item').addClass('sp-fixed-item-unpinned');
+                $('.sp-fixed-item').removeClass('sp-fixed-item-pinned');
+            } else { //Scroll Up
+                $('.sp-fixed-item').removeClass('sp-fixed-item-unpinned');
+                $('.sp-fixed-item').addClass('sp-fixed-item-pinned');
             }
-
-            var myTimeOut;
-            // var myTimeOut2;
-
-            myTimeOut = setTimeout(removeNav, 4000);
-
-            $(".sp-fixed-item").mouseleave( function () {
-                myTimeOut = setTimeout(removeNav, 4000);
-                console.log('mouse left');
-            });
-
-            $(".sp-fixed-item").mouseenter( function () {
-                clearTimeout(myTimeOut);
-                // clearTimeout(myTimeOut2);
-                console.log('mouse entered');
-            });
-
-        } else {
-            $(".sp-fixed-item").fadeOut('slow');
+        }else{
+            $('.sp-fixed-item').addClass('sp-fixed-item-unpinned');
+            $('.sp-fixed-item').removeClass('sp-fixed-item-pinned');
         }
+        if (container.scrollTop() > 500 && container.scrollTop() < ($(window).height())) {
+            $('.sp-fixed-item').removeClass('sp-fixed-item-unpinned');
+                $('.sp-fixed-item').addClass('sp-fixed-item-pinned');
+        }
+        lastScrollY = container.scrollTop();
     });
 });

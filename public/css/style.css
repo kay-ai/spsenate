@@ -8,6 +8,10 @@ body{
     background-attachment: fixed;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .section-container{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -48,11 +52,36 @@ body{
 
 nav.navbar{
     padding: 10px 100px 10px 100px;
-    background-color: #033f631f;
+    background-color: #ffffff80;
     position: fixed;
     width: 100%;
     z-index: 10;
     backdrop-filter: blur(20px);
+}
+
+.sp-fixed-item {
+    transition: transform .35s ease,background-color .35s ease;
+    transform: translateY(-100%);
+}
+
+.sp-fixed-item-pinned{
+    transform: translateY(0%) !important;
+}
+
+.sp-fixed-item-unpinned{
+    transform: translateY(-100%) !important;
+}
+
+.join-us-btn{
+    background-color: #032f4b !important;
+    border-color: #032f4b !important;
+    color: #fff !important;
+}
+
+.join-us-btn:hover{
+    background-color: #FFA010 !important;
+    border-color: #FFA010 !important;
+    color: #fff !important;
 }
 
 .o-input{
@@ -683,6 +712,7 @@ nav.navbar{
 .form-control{
     height: calc(1.5em + 1.5rem + 2px) !important;
     border-radius: 0.5rem !important;
+    background-color: #ffffff4f !important;
 }
 
 .accord-logo{
@@ -847,4 +877,26 @@ nav.navbar{
     .o-btn-row{
         padding: 0 1rem;
     }
+}
+
+/* Footer */
+
+.spacer{
+    height: 300px;
+    width: 100%;
+    background: #e4e4e4;
+}
+
+.footer{
+    height: 500px;
+    background-color: #ffa010f7;
+    position: relative;
+}
+
+.footer-bottom{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: #e48a03ed;
 }

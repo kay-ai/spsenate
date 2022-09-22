@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark sp-fixed-item " style="display: none;">
+<nav class="navbar navbar-expand-md navbar-dark sp-fixed-item shadow">
     <img class="navbar-brand-logo" src="{{asset('img/senate-logo.png')}}">
     <a class="navbar-brand ml-4" href="#">Hon. Shina Peller</a>
     <button id="navbarCollapse" class="navbar-toggler d-lg-none active" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -16,7 +16,7 @@
                 <a class="nav-link" href="#">Volunteer</a>
             </li>
             <li class="nav-item">
-                <a id="" class="btn btn-light px-5" href="#" role="button">Join Us</a>
+                <a id="" class="btn px-5 join-us-btn shadow-sm" href="#" role="button">Join Us</a>
             </li>
         </ul>
     </div>

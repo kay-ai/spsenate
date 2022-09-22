@@ -21,8 +21,10 @@
     </head>
     <body class="clean-scrollbar">
         @include('includes.navbar')
-        @yield('content')
-
+        <div class="section-container clean-scrollbar">
+            @yield('content')
+            @include('includes.footer')
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
