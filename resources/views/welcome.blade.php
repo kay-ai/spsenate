@@ -86,10 +86,15 @@
 
         </section>
         <section class="main-page sec2 section">
-            <div class="o-card p-5 my-5">
-                <div class="p-5"></div>
-                <div class="p-5 quote">Why Vote For Us</div>
-                <div class="p-5"></div>
+            <div class="o-card my-5">
+                <div class=" quote">His actions speak louder</div>
+                <blockquote class="">
+                    He is currently a member of the House of Representatives, representing Iseyin, Itesiwaju, Kajola and Iwajowa federal constituency of Oyo State. His notable performance in delivering proper dividends of democracy and creating a proper channel of communication between him and his constituents has earned him multiple awards, such as the most Promising House of Representatives Member awarded to him by the Democracy Heroes Awards, the Peace Builder Award for Excellence in Community Development by Peace Achievers International Award, and many others.
+                </blockquote>
+                <div class="row o-btn-row">
+                    <input type="submit" class="o-btn o-btn-primary-opp mt-4 ml-auto" role="button" value="Read Bio">
+                </div>
+
             </div>
         </section>
     </div>

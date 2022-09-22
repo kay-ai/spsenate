@@ -790,3 +790,61 @@ nav.navbar{
 .main-page.sec2{
     background-color: #032f4bed;
 }
+
+.sec2 blockquote{
+    font-size: 18px;
+    border-left: 5px solid #FFA010;
+    padding-left: 50px;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    margin: 0 3rem;
+    transition: all 0.5s;
+}
+
+
+.sec2 .quote {
+    padding: 3rem;
+    transition: all 0.5s;
+}
+
+.sec2 .o-card{
+    padding: 3rem;
+    transition: all 0.5s;
+}
+
+.o-btn-row{
+    padding: 0 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .sec2 .quote {
+        padding: 1rem;
+        font-size: 30px;
+    }
+
+    .sec2 blockquote{
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sec2 .quote {
+        font-size: 23px;
+        padding: 0 0 18px 0;
+    }
+
+    .sec2 .o-card{
+        padding: 1.5rem;
+    }
+
+    .sec2 blockquote {
+        font-size: 15px;
+        border-left: 2px solid #FFA010;
+        padding-left: 25px;
+        text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+        margin: 0;
+    }
+
+    .o-btn-row{
+        padding: 0 1rem;
+    }
+}
