@@ -16,7 +16,10 @@
                 <a class="nav-link" href="#">Volunteer</a>
             </li>
             <li class="nav-item">
-                <a id="" class="btn px-5 join-us-btn shadow-sm" href="#" role="button">Join Us</a>
+                <a class="nav-link" href="#">Vote</a>
+            </li>
+            <li class="nav-item">
+                <a id="" class="btn px-3 join-us-btn shadow-sm" href="#" role="button">Join Us</a>
             </li>
         </ul>
     </div>
