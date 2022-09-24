@@ -35,7 +35,7 @@
             </div>
         </div>
     </section>
-    <section class="main-page section">
+    <section class="main-page sec1 section">
         <div class="join-us mt-lg-5 ">
             <div class="row justify-content-center">
                 <div class="col-md-6 flex-break">
@@ -97,7 +97,22 @@
 
         </div>
     </section>
-
+    <section class="main-page sec3 section">
+        <div class="section-header">
+            <p class="text1">Projects</p>
+            <p class="text2">Take a look, You'll like what you see</p>
+        </div>
+        <div class="gallery mt-3">
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+            <div class="gallery-item"></div>
+        </div>
+    </section>
 @endsection
 
 @push('js-bottom')

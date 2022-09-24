@@ -654,6 +654,9 @@ nav.navbar{
 
 
 /* Main Content */
+.main-page.sec1{
+    border-bottom: 2px solid #FFA010;
+}
 .main-page{
     background: #f9fafbf0;
     position: relative;
@@ -819,6 +822,7 @@ nav.navbar{
 /* Why Vote section */
 .main-page.sec2{
     background-color: #032f4bed;
+    border-bottom: 2px solid #fff;
 }
 
 .sec2 blockquote{
@@ -843,6 +847,46 @@ nav.navbar{
 
 .o-btn-row{
     padding: 0 2rem;
+}
+
+.main-page.sec3{
+    background: #303234f0;
+    border-bottom: 2px solid #fff;
+    background: linear-gradient(45deg, rgba(48,50,52,0.93) 0%, rgba(77,78,80,0.93) 15%, rgba(109,110,112,0.93) 30%, rgba(139,140,141,0.93) 45%, rgba(174,174,175,0.93) 60%, rgba(214,214,214,0.93) 75%, rgba(232,232,232,0.93) 90%, rgba(255,255,255,0.93) 100%);
+    background-size: 1000%;
+    animation: bg-animation 45s infinite;
+}
+
+.sec3 .text1{
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    color: #FFA010;
+    margin-bottom: 0;
+}
+
+.sec3 .text2{
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    color: #afa6a6;
+    margin-bottom: 0;
+}
+
+.sec3 .gallery{
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sec3 .gallery .gallery-item{
+    width: 315px;
+    height: 315px;
+    background: #21252987;
+    border-radius: 10px;
+    margin: 5px 0;
 }
 
 @media screen and (max-width: 1000px) {
