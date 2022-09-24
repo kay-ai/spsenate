@@ -898,6 +898,11 @@ nav.navbar{
     .sec2 blockquote{
         margin: 1rem;
     }
+
+    .sec3 .text2{
+        font-size: 18px;
+        color: #21252987;
+    }
 }
 
 @media screen and (max-width: 600px) {
