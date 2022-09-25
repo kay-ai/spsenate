@@ -1,4 +1,4 @@
-@extends('layouts.app', [$pageTitle = 'SP | Welcome', $activePage = 'Welcome'])
+@extends('layouts.app', [$pageTitle = 'SP | Welcome', $activePage = 'welcome'])
 
 @section('content')
 

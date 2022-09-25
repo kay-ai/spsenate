@@ -317,6 +317,8 @@ nav.navbar{
     left: 26%;
     height: 350%;
     top: 90px;
+    -webkit-mask-image: linear-gradient(to top, transparent 20%, black 65%, black 100%);
+    mask-image: linear-gradient(to top, transparent 20%, black 65%, black 100%);
 }
 
 .hero-overlay .content-div .vote-text{
@@ -1019,4 +1021,67 @@ nav.navbar{
     .footer .text2{
         font-size: 25px;
     }
+}
+
+
+/* Bio Page CSS */
+.first-row{
+    height: 80vh;
+}
+
+.bio-type-1{
+    min-height: 100vh;
+    background: #091822f0 !important;
+}
+
+.bio-type-1 .first-row .sp-bg-img{
+    height: 100vh;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
+    mask-image: linear-gradient(to top, transparent 5%, black 100%);
+}
+
+.first-row .the-content-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.first-row .about-header{
+    font-size: 45px;
+    color: #ffa010;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.first-row .about-body{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+.bio-sec2{
+    background: #17120af0 !important;
+    border-top: 2px solid #fff;
+}
+
+.bio-sec3{
+    background: #121313f0 !important;
+    border-top: 2px solid #fff;
+}
+
+.bio-sec4{
+    border-top: 2px solid #fff;
+}
+
+.more-text .about-header{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.more-text .about-body{
+    font-size: 18px;
 }

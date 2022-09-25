@@ -37,7 +37,12 @@
         <script src="{{asset('js/jquery.mousewheel.min.js')}}"></script>
 
         {{-- Additional Js --}}
-        <script src="{{asset('js/script.js?v='.now())}}"></script>
+        @if ($activePage == 'welcome')
+            <script src="{{asset('js/welcome-script.js?v='.now())}}"></script>
+        @else
+            <script src="{{asset('js/script.js?v='.now())}}"></script>
+        @endif
+
         @stack('js-bottom')
     </body>
 </html>
