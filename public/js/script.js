@@ -37,16 +37,22 @@ $(document).ready(function() {
             $('.sp-fixed-item').addClass('sp-fixed-item-pinned');
         }
 
+        lastScrollY = container.scrollTop();
+
         if ($('.spacer').isOnScreen()) {
             // The element is visible, do something
             $('.sp-bg-img').fadeOut();
-            $('.sp-bg-img2').fadeOut();
         } else {
             // The element is NOT visible, do something else
             $('.sp-bg-img').fadeIn();
-            $('.sp-bg-img2').fadeIn();
         }
 
-        lastScrollY = container.scrollTop();
+        if ($('.spacer').isOnScreen()) {
+            // The element is visible, do something
+            $('.sp-bg-img2').addClass('d-none');
+        } else {
+            // The element is NOT visible, do something else
+            $('.sp-bg-img2').removeClass('d-none');
+        }
     });
 });

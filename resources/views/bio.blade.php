@@ -1,7 +1,7 @@
 @extends('layouts.app', [$pageTitle = 'SP | Bio', $activePage = 'bio'])
 
 @section('content')
-<img class="sp-bg-img2"src="{{asset('img/sp-bg2.png')}}" alt="sp-img">
+<img class="sp-bg-img2"src="{{asset('img/sp-bg3.png')}}" alt="sp-img">
     <section class="main-page bio-type-1 bio-sec1 section">
         <div class="row first-row">
             <div class="col-md-6">

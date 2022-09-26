@@ -4,12 +4,12 @@
 
     <section class="hero-overlay section">
         <div class="new-nav d-flex justify-content-between">
-            <div class="nav-names left shadow-sm">
+            <a href="/bio" class="nav-names left shadow-sm">
                 <p> HON. SHINA PELLER </p>
-            </div>
-            <div class="nav-names right shadow-sm">
+            </a>
+            <a href="/bio" class="nav-names right shadow-sm">
                 <p> FOR OYO NORTH </p>
-            </div>
+            </a>
         </div>
         <div class="content-div">
             <p class="vote-text">VOTE</p>

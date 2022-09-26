@@ -9,6 +9,9 @@
     </button>
     <div class="collapse navbar-collapse nav-content" id="collapsibleNavId">
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item {{$activePage == 'welcome' ? 'active' : ''}}">
+                <a class="nav-link" href="/">Home</a>
+            </li>
             <li class="nav-item {{$activePage == 'bio' ? 'active' : ''}}">
                 <a class="nav-link" href="/bio">Bio</a>
             </li>

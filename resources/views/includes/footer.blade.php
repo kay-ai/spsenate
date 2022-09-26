@@ -1,3 +1,4 @@
+<div class="top-spacer"></div>
 <div class="spacer section"></div>
 <div class="footer section">
     <div class="row justify-content-center pt-5 mx-3">
@@ -21,7 +22,7 @@
             <div class="footer-links">
                 <a href="/" class="link">Home</a>
                 <a href="#" class="link">Volunteer</a>
-                <a href="#" class="link">Bio</a>
+                <a href="/bio" class="link">Bio</a>
                 <a href="#" class="link">Donate</a>
             </div>
         </div>
