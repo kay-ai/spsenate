@@ -92,7 +92,7 @@
                 He is currently a member of the House of Representatives, representing Iseyin, Itesiwaju, Kajola and Iwajowa federal constituency of Oyo State. His notable performance in delivering proper dividends of democracy and creating a proper channel of communication between him and his constituents has earned him multiple awards, such as the most Promising House of Representatives Member awarded to him by the Democracy Heroes Awards, the Peace Builder Award for Excellence in Community Development by Peace Achievers International Award, and many others.
             </blockquote>
             <div class="row o-btn-row">
-                <input type="submit" class="o-btn o-btn-primary-opp mt-4 ml-auto" role="button" value="Read Bio">
+                <a href="/bio" class="o-btn o-btn-primary-opp mt-4 ml-auto">Read Bio</a>
             </div>
 
         </div>
