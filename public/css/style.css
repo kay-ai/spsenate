@@ -1085,3 +1085,51 @@ nav.navbar{
 .more-text .about-body{
     font-size: 1.9vh;
 }
+
+.sp-bg-img2{
+    display: none;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .bio-type-1 .first-row .sp-bg-img{
+        display: none !important;
+    }
+
+    .first-row{
+        height: unset !important;
+    }
+
+    .sp-bg-img2{
+        display: block;
+        position: absolute;
+        width: 100vh;
+        left: -40px;
+        top: -60px;
+        -webkit-mask-image: linear-gradient(to top, transparent 0%, black 10%, black 100%);
+        mask-image: linear-gradient(to top, transparent 0%, black 10%, black 100%);
+    }
+
+    .the-content-div{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .first-row .about-header{
+        margin-top: 20vh;
+    }
+
+    .more-text .about-header{
+        margin-top: 7vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .first-row .about-header{
+        margin-top: 14vh;
+    }
+
+    .more-text .about-header{
+        margin-top: 7vh;
+    }
+}
