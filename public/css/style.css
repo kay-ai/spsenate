@@ -789,6 +789,7 @@ nav.navbar{
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
+    margin: auto;
 }
 
 .bills .owl-carousel .item:hover{
@@ -819,6 +820,10 @@ nav.navbar{
 }
 
 @media screen and (max-width: 1000px) {
+    .bills .quote{
+        text-align: center;
+    }
+
     .main-page{
         padding: 100px 70px;
     }
