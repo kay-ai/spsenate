@@ -16,10 +16,7 @@
                 <a class="nav-link" href="/bio">Bio</a>
             </li>
             <li class="nav-item {{$activePage == 'volunteer' ? 'active' : ''}}">
-                <a class="nav-link" href="#">Volunteer</a>
-            </li>
-            <li class="nav-item {{$activePage == 'vote' ? 'active' : ''}}">
-                <a class="nav-link" href="#">Vote</a>
+                <a class="nav-link" href="/#volunteer-anchor">Volunteer</a>
             </li>
             <li class="nav-item">
                 <a id="" class="btn px-3 join-us-btn shadow-sm" href="#" role="button">Join Us</a>

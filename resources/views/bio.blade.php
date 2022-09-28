@@ -24,7 +24,7 @@
             <div class="col-md-6 the-content-div py-lg-5">
                 <p class="about-header">Education</p>
                 <div class="about-body pr-lg-4">
-                    <p> He is a consummate businessman and entrepreneur with over 20 years leadership and management experience. He holds a bachelor degree in Chemical Engineering from Ladoke Akintola University of Technology (LAUTECH) and a Master’s degree in Business Administration.</p>
+                    <p>He is a consummate businessman and entrepreneur with over 20 years leadership and management experience. He holds a bachelor degree in Chemical Engineering from Ladoke Akintola University of Technology (LAUTECH) and a Master’s degree in Business Administration. He has attended many leadership courses including the <b>GOTNI</b> Advanced leadership course.</p>
                     <p>Hon. Shina Peller’s training was the foundation for the rapid success achieved by Aquila Oil and Gas in the downstream petroleum industry within the last decade and the current backward integration into the upstream oil and Gas industry. The dynamic and skilled Peller also puts on his engineering hat when overseeing complex real estate projects and investments across Nigeria and abroad driven by Aquila Building Projects Limited.</p>
                 </div>
             </div>
@@ -35,12 +35,13 @@
             <div class="col-md-6">
                 <img class="sp-bg-img"src="{{asset('img/sp-bg2.png')}}" alt="sp-img">
             </div>
-            <div class="col-md-6 the-content-div py-lg-5">
+            <div class="col-md-6 the-content-div pt-lg-5">
                 <p class="about-header">Politics</p>
                 <div class="about-body pr-lg-4">
+                    <p>He is a new-generation politician who joined active politics in 2018, out of the need to give a new direction to politics and raise a new generation of leaders.</p>
                     <p>In the 2019 general elections, Hon. Shina Peller contested for House of Representatives seat of Iseyin/Itesiwaju/Kajola/Iwajowa federal constituency, Oyo State under the platform of the All-Progressive Congress (APC) and won with a landslide victory.</p>
                     <p>He is currently a member of the House of Representatives, representing Iseyin, Itesiwaju, Kajola and Iwajowa federal constituency of Oyo State. His notable performance in delivering proper dividends of democracy and creating a proper channel of communication between him and his constituents has earned him multiple awards, such as the most Promising House of Representatives Member awarded to him by the Democracy Heroes Awards, the Peace Builder Award for Excellence in Community Development by Peace Achievers International Award, and many others.</p>
-                    <p>Hon. Peller's activeness on the floor of the House is evident in his numerous bills and motions which are masses driven. Also, his constituency outreach has continuously been described by many as noteworthy.</p>
+                    <p>Hon. Peller's activeness on the floor of the House is evident in his numerous bills and motions which are masses driven one of which is the Bill on the "Need to tackle the scourge of Rape". This subsequently prompted the federal government to launch the first ever National Sexual Offence Register in the country. Also, his constituency outreach has continuously been described by many as noteworthy.</p>
                     <p>Hon. Peller is the Chairman Board of Trustees of Lead Generation Initiative (LGI), a non-governmental, non-partisan and non-profit organization committed to creating opportunities for young Africans to channel their creativity, energy and aspirations to adding values to their communities. The organization develops the interest of youth in governance, social inclusion and participation in the democratic and development process of their country.</p>
                 </div>
             </div>

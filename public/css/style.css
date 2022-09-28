@@ -700,7 +700,7 @@ nav.navbar{
     font-weight: 600;
     color: #afa6a6;
     padding-right: 80px;
-    margin-top: 30px;
+    margin-top: 75px;
     text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
@@ -774,6 +774,50 @@ nav.navbar{
 .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
     box-shadow: unset;
 }
+
+.main-page.sec3 .quote{
+    padding-right: unset;
+}
+
+.bills .owl-carousel .item{
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.bills .owl-carousel .item:hover{
+    background: #032f4bf0;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+.bills .owl-carousel .item .bills-text{
+    font-size: 14.5px !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+
+.sp-quotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sp-quotes .quote{
+    font-size: 30px;
+}
+
+.bills .quote{
+    font-weight: 200;
+    color: #ffa900;
+}
+
 @media screen and (max-width: 1000px) {
     .main-page{
         padding: 100px 70px;
@@ -832,7 +876,7 @@ nav.navbar{
 /* Why Vote section */
 .main-page.sec2{
     background-color: #032f4bed;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ffa010;
 }
 
 .sec2 blockquote{
@@ -860,6 +904,11 @@ nav.navbar{
 }
 
 .main-page.sec3{
+    border-bottom: 2px solid #032f4b;
+    min-height: 80vh;
+}
+
+.main-page.sec4{
     background: #303234f0;
     border-bottom: 2px solid #fff;
     background: linear-gradient(45deg, rgba(48,50,52,0.93) 0%, rgba(77,78,80,0.93) 15%, rgba(109,110,112,0.93) 30%, rgba(139,140,141,0.93) 45%, rgba(174,174,175,0.93) 60%, rgba(214,214,214,0.93) 75%, rgba(232,232,232,0.93) 90%, rgba(255,255,255,0.93) 100%);
@@ -867,7 +916,7 @@ nav.navbar{
     animation: bg-animation 45s infinite;
 }
 
-.sec3 .text1{
+.sec4 .text1{
     font-size: 50px;
     font-weight: 900;
     text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
@@ -875,7 +924,7 @@ nav.navbar{
     margin-bottom: 0;
 }
 
-.sec3 .text2{
+.sec4 .text2{
     font-size: 30px;
     font-weight: 700;
     text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
@@ -883,7 +932,7 @@ nav.navbar{
     margin-bottom: 0;
 }
 
-.sec3 .gallery{
+.sec4 .gallery{
     display: flex;
     width: 100%;
     column-gap: 10px;
@@ -891,7 +940,7 @@ nav.navbar{
     justify-content: center;
 }
 
-.sec3 .gallery .gallery-item{
+.sec4 .gallery .gallery-item{
     width: 315px;
     height: 315px;
     background: #21252987;
@@ -909,7 +958,7 @@ nav.navbar{
         margin: 1rem;
     }
 
-    .sec3 .text2{
+    .sec4 .text2{
         font-size: 18px;
         color: #21252987;
     }
@@ -1034,7 +1083,7 @@ nav.navbar{
 
 /* Bio Page CSS */
 .first-row{
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .bio-type-1{
@@ -1076,7 +1125,7 @@ nav.navbar{
     border-top: 2px solid #fff;
 }
 
-.bio-sec3{
+.bio-sec4{
     background: #121313f0 !important;
     border-top: 2px solid #fff;
 }
@@ -1099,7 +1148,7 @@ nav.navbar{
 }
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
     .bio-type-1 .first-row .sp-bg-img{
         display: none !important;
     }

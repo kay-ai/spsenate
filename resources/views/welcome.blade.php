@@ -16,6 +16,7 @@
             <div class="badges">
                 <span class="words left one">An Entreprenuer</span>
                 <span class="words right one">A Peace Maker</span>
+                <span class="words left one">Voice of the Common Man</span>
                 <span class="words left two">Organizer Peller Unity Cup</span>
                 <span class="words right two">A Businessman</span>
                 <span class="words left three">The Ayedero of Yoruba Land</span>
@@ -48,22 +49,33 @@
                 </div>
                 <div class="col-md-6 flex-break">
                     <div class="o-card card shadow">
-                        <p class="heading-1"><span>J</span>oin Us</p>
+                        <p class="heading-1" id="volunteer-anchor"><span>J</span>oin Us</p>
                         <img src="{{asset('img/accord-logo.png')}}" class="accord-logo" alt="accord-logo">
                         <form action="#" method="post">
                             <div class="join-form-row row p-lg-5 pt-0">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                    <label for="">Email</label>
+                                    <label for="">Email*</label>
                                     <input type="text"
-                                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                    <label for="">Full Name</label>
+                                    <label for="">Full Name*</label>
                                     <input type="text"
-                                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="">Areas of Interest*</label>
+                                        <select name="occupation" class="form-control" required>
+                                            <option value="participant">Regular Participant</option>
+                                            <option value="mobilization">Mobilization</option>
+                                            <option value="media">Communications/Media</option>
+                                            <option value="finance">Finance</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -98,6 +110,58 @@
         </div>
     </section>
     <section class="main-page sec3 section">
+        <div class="join-us mt-lg-5 ">
+            <div class="row justify-content-center">
+                {{-- <div class="col-md-4 sp-quotes">
+                    <p class="quote">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rerum?"
+                    </p>
+                    <p class="author">
+                    <span>-</span> Hon. Shina Peller
+                    </p>
+                </div> --}}
+                <div class="col-md-12">
+                    <div class="bills">
+                        <p class="quote">Bills Passed</p>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item shadow-sm">
+                                <p class="bills-text">A motion on the need to tackle the scourge of rape and sexual offences in Nigeria. This has subsequently prompted the federal government to launch first ever National Sexual Offence Register in the country.</p>
+                            </div>
+                            <div class="item shadow-sm">
+                                <p class="bills-text">A petition was raised on the dilapidated roads of Iseyin/Oyo and Okeho/Iganna road. This is being complemented by underground work, which will attract results soon.</p>
+                            </div>
+                            <div class="item shadow-sm">
+                                <p class="bills-text">A bill seeking amendment to the Universal Basic Education Act 2004. It has passed through first reading.</p>
+                            </div>
+                            <div class="item shadow-sm">
+                                <p class="bills-text">Motion on the need to reinvigorate the National Orientation Agency for impactful discharge of its mandate.</p>
+                            </div>
+                            <div class="item shadow-sm">
+                                <p class="bills-text">Motion on the urgent need to investigate the unrest in Iseyin caused by the killing of indigenes by men of the Nigeria Customs Service</p>
+                            </div>
+                            <div class="item shadow-sm">
+                                <p class="bills-text">Motion on the urgent need to Revamp Ado-Awaye Suspended Lake.</p>
+                            </div>
+                            <div class="item shadow-sm">
+                                <p class="bills-text">Bank Employees etc (Declaration of Assets)(Amendment) Bill 2021. Passed through second reading.</p>
+                            </div>
+                            <div class="item shadow-sm">
+                                <p class="bills-text">Nigeria Security and Civil Defence Corps (Repeal and Transition) Bill 2022</p>
+                            </div>
+                            <div class="item shadow-sm">
+                                <p class="bills-text">Motion on the need to resuscitate Ikere-Gorge Dam in Iseyin.</p>
+                            </div>
+                            <div class="item shadow-sm">
+                                <p class="bills-text">A bill for an act to amend the National Orientation Agency Act, it has also passed through first reading.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="main-page sec4 section">
         <div class="section-header">
             <p class="text1">Projects</p>
             <p class="text2">Take a look, You'll like what you see</p>
@@ -116,6 +180,36 @@
 @endsection
 
 @push('js-bottom')
-
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:6
+                }
+            }
+        })
+        owl.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY>0) {
+                owl.trigger('next.owl');
+            } else {
+                owl.trigger('prev.owl');
+            }
+            e.preventDefault();
+        });
+    </script>
 @endpush
+
 
