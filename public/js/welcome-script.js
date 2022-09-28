@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     container.on("scroll", function(e) {
 
-        if (container.scrollTop() > ($(window).height())) {
+        if (container.scrollTop() > ($(window).height() + 100)) {
             if (lastScrollY < container.scrollTop()){ //Scroll Down
                 $('.sp-fixed-item').addClass('sp-fixed-item-unpinned');
                 $('.sp-fixed-item').removeClass('sp-fixed-item-pinned');
@@ -16,9 +16,9 @@ $(document).ready(function() {
             $('.sp-fixed-item').addClass('sp-fixed-item-unpinned');
             $('.sp-fixed-item').removeClass('sp-fixed-item-pinned');
         }
-        if (container.scrollTop() > 500 && container.scrollTop() < ($(window).height())) {
+        if (container.scrollTop() > 500 && container.scrollTop() < ($(window).height() + 100)) {
             $('.sp-fixed-item').removeClass('sp-fixed-item-unpinned');
-                $('.sp-fixed-item').addClass('sp-fixed-item-pinned');
+            $('.sp-fixed-item').addClass('sp-fixed-item-pinned');
         }
         lastScrollY = container.scrollTop();
     });

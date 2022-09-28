@@ -341,6 +341,10 @@ nav.navbar{
 }
 
 @media screen and (max-width: 1000px) {
+    .navbar-brand{
+        font-size: 2.2vw !important;
+    }
+
     .clean-scrollbar::-webkit-scrollbar {
         display: none;
     }
@@ -350,8 +354,8 @@ nav.navbar{
     }
 
     .hero-overlay .content-div img {
-        left: -3vw;
-        height: 125vw;
+        left: 4vw;
+        height: 115vw;
         top: 100px;
     }
 
@@ -434,6 +438,12 @@ nav.navbar{
     .badges .words.left.six{
         left: 5%;
         top: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav.navbar{
+        padding: 10px 80px;
     }
 }
 
@@ -866,7 +876,7 @@ nav.navbar{
     .heading-1 {
         font-size: 75px;
         margin-top: -45px;
-        margin-left: -20px;
+        margin-left: -20px !important;
     }
 
     .join-form-row{
@@ -957,6 +967,11 @@ nav.navbar{
     .sec2 .quote {
         padding: 1rem;
         font-size: 30px;
+        margin-top: 0;
+    }
+
+    .heading-1{
+        margin-left: -40px;
     }
 
     .sec2 blockquote{
@@ -966,6 +981,11 @@ nav.navbar{
     .sec4 .text2{
         font-size: 18px;
         color: #21252987;
+    }
+
+    .sec4 .gallery .gallery-item{
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -989,6 +1009,11 @@ nav.navbar{
 
     .o-btn-row{
         padding: 0 1rem;
+    }
+
+    .sec4 .gallery .gallery-item{
+        width: 170px;
+        height: 170px;
     }
 }
 
@@ -1130,6 +1155,10 @@ nav.navbar{
     border-top: 2px solid #fff;
 }
 
+.bio-sec3{
+    border-top: 2px solid #fff;
+}
+
 .bio-sec4{
     background: #121313f0 !important;
     border-top: 2px solid #fff;
@@ -1187,6 +1216,18 @@ nav.navbar{
 
     .more-text .about-header{
         margin-top: 7vh;
+    }
+
+    .spacer{
+        height: 150px;
+    }
+
+    .footer{
+        height: 450px;
+    }
+
+    .footer-bottom{
+        height: 80px;
     }
 }
 
