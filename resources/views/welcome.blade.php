@@ -4,19 +4,19 @@
 
     <section class="hero-overlay section">
         <div class="new-nav d-flex justify-content-between">
-            <a href="/bio" class="nav-names left shadow-sm">
+            <a href="/bio" class="nav-names left shadow-sm animate__animated animate__lightSpeedInLeft animate__slow">
                 <p> HON. SHINA PELLER </p>
             </a>
-            <a href="/bio" class="nav-names right shadow-sm">
+            <a href="/bio" class="nav-names right shadow-sm animate__animated animate__lightSpeedInRight animate__slow">
                 <p> FOR OYO NORTH </p>
             </a>
         </div>
         <div class="content-div">
-            <p class="vote-text">VOTE</p>
+            <p class="vote-text animate__animated animate__fadeInDown">VOTE</p>
             <div class="badges">
                 <span class="words left one">An Entreprenuer</span>
                 <span class="words right one">A Peace Maker</span>
-                <span class="words left one">Voice of the Common Man</span>
+                <span class="words right six">Voice of the Common Man</span>
                 <span class="words left two">Organizer Peller Unity Cup</span>
                 <span class="words right two">A Businessman</span>
                 <span class="words left three">The Ayedero of Yoruba Land</span>
@@ -27,9 +27,9 @@
                 <span class="words right five">Founder AQUILA GROUP</span>
                 <span class="words left six">A Leader</span>
             </div>
-            <img src="{{asset('img/sp-bg.png')}}">
+            <img class="animate__animated animate__slideInUp animate__slow" src="{{asset('img/sp-bg.png')}}">
         </div>
-        <div class="hero-bottom shadow-sm">
+        <div class="hero-bottom shadow-sm animate__animated animate__slideInUp">
             <p>FOR SENATE</p>
             <div class="bottom-line">
                 <p>THE PEOPLE'S CHOICE</p>
@@ -40,10 +40,10 @@
         <div class="join-us mt-lg-5 ">
             <div class="row justify-content-center">
                 <div class="col-md-6 flex-break">
-                    <p class="quote">
+                    <p class="quote fadeLeft">
                         "Bad officials are elected by good citizens who don't vote"
                     </p>
-                    <p class="author">
+                    <p class="author fadeLeft">
                     <span>-</span> George Jean Nathan
                     </p>
                 </div>

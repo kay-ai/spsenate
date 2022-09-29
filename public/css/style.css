@@ -16,7 +16,8 @@ body::-webkit-scrollbar {
     scroll-behavior: smooth;
     /* scroll-snap-type: y mandatory; */
     height: 100vh;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     position: fixed;
     width: 100vw;
 }
@@ -441,6 +442,11 @@ nav.navbar{
         left: 5%;
         top: 70%;
     }
+
+    .badges .words.right.six{
+        right: 5%;
+        top: 50%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -545,7 +551,7 @@ nav.navbar{
 }
 
 .badges .words.left.one{
-    left: 20%;
+    left: 12%;
     top: 50%;
     animation: fadeInOut1 50s ease reverse forwards infinite;
     opacity: 0;
@@ -606,14 +612,14 @@ nav.navbar{
 
 .badges .words.left.five{
     left: 10%;
-    top: 90%;
+    top: 75%;
     animation: fadeInOut5 50s ease reverse forwards infinite;
     animation-delay: 1000ms;
     opacity: 0;
 }
 
 .badges .words.right.five{
-    right: 10%;
+    right: 5%;
     top: 90%;
     animation: fadeInOut5 50s ease reverse forwards infinite;
     animation-delay: 3000ms;
@@ -625,7 +631,15 @@ nav.navbar{
     top: 105%;
     animation: fadeInOut6 50s ease reverse forwards infinite;
     opacity: 0;
-    animation-delay: 1500ms;
+    animation-delay: 3000ms;
+}
+
+.badges .words.right.six{
+    right: 5%;
+    top: 70%;
+    animation: fadeInOut6 50s ease reverse forwards infinite;
+    opacity: 0;
+    animation-delay: 1800ms;
 }
 
 @keyframes fadeInOut1 {
@@ -741,10 +755,10 @@ nav.navbar{
 }
 
 .accord-logo{
-    width: 40%;
+    width: 25%;
     position: absolute;
     right: -30px;
-    top: -5%;
+    top: -3%;
     opacity: 0.4;
 }
 

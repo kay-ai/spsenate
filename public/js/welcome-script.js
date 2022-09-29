@@ -1,3 +1,23 @@
+$.fn.isOnScreen = function(){
+
+    var win = $(window);
+
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+};
+
+
 $(document).ready(function() {
     let container = $('.section-container');
     let lastScrollY = container.scrollTop();
@@ -21,5 +41,19 @@ $(document).ready(function() {
             $('.sp-fixed-item').addClass('sp-fixed-item-pinned');
         }
         lastScrollY = container.scrollTop();
+
+        if ($('.sec1').isOnScreen()) {
+            $('.sec1 .o-card').addClass('animate__animated animate__delay-1s animate__slow animate__fadeInRight');
+            $('.sec1 .fadeLeft').addClass('animate__animated animate__delay-1s animate__slow animate__fadeInLeft');
+        } else {
+            $('.sec1 .o-card').removeClass('animate__animated animate__delay-1s animate__slow animate__fadeInRight');
+            $('.sec1 .fadeLeft').removeClass('animate__animated animate__delay-1s animate__slow animate__fadeInLeft');
+        }
+
+        if ($('.sec2').isOnScreen()) {
+            $('.sec2 .o-card').addClass('animate__animated animate__delay-2s animate__rubberBand');
+        } else {
+            $('.sec2 .o-card').removeClass('animate__animated animate__delay-2s animate__rubberBand');
+        }
     });
 });
