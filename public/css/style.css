@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 
 .section-container{
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     height: 100vh;
     overflow: auto;
     position: fixed;
@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 }
 
 .section{
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
 }
 
 .clean-scrollbar::-webkit-scrollbar {
@@ -837,6 +837,7 @@ nav.navbar{
 @media screen and (max-width: 1000px) {
     .bills .quote{
         text-align: center;
+        margin-top: unset !important;
     }
 
     .main-page{
@@ -849,6 +850,10 @@ nav.navbar{
 
     .quote{
         font-size: 42px;
+    }
+
+    .join-us .quote{
+        margin-top: unset !important;
     }
 }
 
@@ -864,18 +869,27 @@ nav.navbar{
 }
 
 @media screen and (max-width: 500px) {
+    .form-control{
+        height: calc(1.5em + 1.3rem + 1px) !important;
+    }
+
+    .accord-logo{
+        width: 25%;
+        right: -20px;
+        top: -2%;
+    }
 
     .main-page{
         padding: 100px 30px;
     }
 
     .quote{
-        font-size: 30px;
+        font-size: 25px;
         padding-right: unset;
     }
 
     .author{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .heading-1 {
@@ -889,7 +903,7 @@ nav.navbar{
     }
 
     .o-card{
-        margin-top: 25px;
+        margin-top: 50px;
     }
 }
 
@@ -926,6 +940,9 @@ nav.navbar{
 .main-page.sec3{
     border-bottom: 2px solid #032f4b;
     min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main-page.sec4{
@@ -1194,6 +1211,7 @@ nav.navbar{
 
     .sp-bg-img2{
         display: block !important;
+        position: fixed !important;
     }
 
     .first-row{
