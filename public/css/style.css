@@ -17,6 +17,8 @@ body::-webkit-scrollbar {
     scroll-snap-type: y mandatory;
     height: 100vh;
     overflow: auto;
+    position: fixed;
+    width: 100vw;
 }
 
 .section{
@@ -790,26 +792,29 @@ nav.navbar{
 }
 
 .bills .owl-carousel .item{
-    background: #fff;
-    padding: 15px;
+    background: #032f4bf0;
+    padding: 20px;
     border-radius: 15px;
-    width: 200px;
-    height: 220px;
+    width: 280px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
-    margin: auto;
+    margin: 20px auto;
+    color: #fff;
+    border: 2px solid #032134;
 }
 
 .bills .owl-carousel .item:hover{
-    background: #032f4bf0;
-    color: #fff;
-    transform: scale(1.02);
+    background: #032134;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255 255 255);
+    transform: scale(1.05);
 }
 
 .bills .owl-carousel .item .bills-text{
-    font-size: 14.5px !important;
+    font-size: 15px !important;
     margin-bottom: 0 !important;
     text-align: center;
 }
