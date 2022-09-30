@@ -40,7 +40,7 @@ $(document).ready(function() {
         lastScrollY = container.scrollTop();
 
         if ($('.spacer').isOnScreen()) {
-                // The element is visible, do something
+            // The element is visible, do something
             $('.sp-bg-img').fadeOut();
         } else {
             // The element is NOT visible, do something else

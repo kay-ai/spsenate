@@ -1,13 +1,14 @@
 @extends('layouts.app', [$pageTitle = 'SP | Welcome', $activePage = 'welcome'])
 
 @section('content')
+@include('includes.lightbox')
 
     <section class="hero-overlay section">
         <div class="new-nav d-flex justify-content-between">
-            <a href="/bio" class="nav-names left shadow-sm animate__animated animate__lightSpeedInLeft animate__slow">
+            <a href="/bio" class="nav-names left shadow-sm animate__animated animate__fadeInLeft animate__slow">
                 <p> HON. SHINA PELLER </p>
             </a>
-            <a href="/bio" class="nav-names right shadow-sm animate__animated animate__lightSpeedInRight animate__slow">
+            <a href="/bio" class="nav-names right shadow-sm animate__animated animate__fadeInRight animate__slow">
                 <p> FOR OYO NORTH </p>
             </a>
         </div>
@@ -167,14 +168,54 @@
             <p class="text2">Take a look, You'll like what you see</p>
         </div>
         <div class="gallery mt-3">
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
-            <div class="gallery-item"></div>
+            <div class="gallery-item cursor" onclick="openModal();currentSlide(1)">
+                <img src="{{asset('img/project-school (1).jpg')}}" alt="" >
+                <div class="overlay">
+                    <p>A block of 6 classroom at Muslim Grammar School, Iseyin Local Government, Iseyin.</p>
+                </div>
+            </div>
+            <div class="gallery-item cursor" onclick="openModal();currentSlide(2)">
+                <img src="{{asset('img/project-streetlight (1).jpg')}}" alt="" >
+                <div class="overlay">
+                    <p>Street Light at Kara Road, Koso Iseyin Local Government, Iseyin.</p>
+                </div>
+            </div>
+            <div class="gallery-item cursor" onclick="openModal();currentSlide(3)">
+                <img src="{{asset('img/project-borehole (1).jpg')}}" alt="" >
+                <div class="overlay">
+                    <p>1 of the 18 Boreholes built across the federal constituency after the election.</p>
+                </div>
+            </div>
+            <div class="gallery-item cursor" onclick="openModal();currentSlide(4)">
+                <img src="{{asset('img/project (13).jpg')}}" alt="" >
+                <div class="overlay">
+                    <p>Multifaceted Toilet, Otu, Itesiwaju local government</p>
+                </div>
+            </div>
+            <div class="gallery-item cursor" onclick="openModal();currentSlide(5)">
+                <img src="{{asset('img/project-borehole (3).jpg')}}" alt="">
+                <div class="overlay">
+                    <p>1 of the 18 Boreholes built across the federal constituency after the election</p>
+                </div>
+            </div>
+            <div class="gallery-item cursor" onclick="openModal();currentSlide(6)">
+                <img src="{{asset('img/project-borehole (4).jpg')}}" alt="">
+                <div class="overlay">
+                    <p>1 of the 18 Boreholes built across the federal constituency after the election</p>
+                </div>
+            </div>
+            <div class="gallery-item cursor" onclick="openModal();currentSlide(7)">
+                <img src="{{asset('img/project-streetlight (3).jpg')}}" alt="">
+                <div class="overlay">
+                    <p>Street Light at Kara Road, Koso Iseyin Local Government, Iseyin.</p>
+                </div>
+            </div>
+            <div class="gallery-item cursor" onclick="openModal();currentSlide(8)">
+                <img src="{{asset('img/project-school (2).jpg')}}" alt="">
+                <div class="overlay">
+                    <p>A block of 6 classroom at Muslim Grammar School, Iseyin Local Government, Iseyin.</p>
+                </div>
+            </div>
         </div>
     </section>
 @endsection
@@ -215,6 +256,42 @@
             }
             e.preventDefault();
         });
+        function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
     </script>
 @endpush
 
