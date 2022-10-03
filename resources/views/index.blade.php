@@ -41,21 +41,12 @@
         <div class="join-us mt-lg-5 ">
             <div class="row justify-content-center">
                 <div class="col-md-6 flex-break">
-                    <p class="quote mb-0 fadeLeft">
+                    <p class="quote fadeLeft">
                         "Bad officials are elected by good citizens who don't vote"
                     </p>
-                    <p class="author mb-1 fadeLeft">
-                        <span>-</span> George Jean Nathan
+                    <p class="author fadeLeft">
+                    <span>-</span> George Jean Nathan
                     </p>
-                    <div class="ballot-print d-flex fadeUp">
-                        <img class="accord-party-logo" src="{{asset('img/accord-party.jpg')}}">
-                        <img class="fingerprint" src="{{asset('img/Fingerprint.png')}}">
-                        <div class="election-text mt-2">
-                            <p>2023</p>
-                            <p>SENETORIAL</p>
-                            <p>ELECTION</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-md-6 flex-break">
                     <div class="o-card card shadow">
@@ -67,20 +58,20 @@
                                     <div class="form-group">
                                     <label for="">Email*</label>
                                     <input type="text"
-                                        class="form-control" name="email" id="" aria-describedby="helpId" placeholder="johndoe@email.com" required>
+                                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                     <label for="">Full Name*</label>
                                     <input type="text"
-                                        class="form-control" name="full_name" id="" aria-describedby="helpId" placeholder="John Doe" required>
+                                        class="form-control" name="" id="" aria-describedby="helpId" placeholder="" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="">Areas of Interest*</label>
-                                        <select name="specialty" class="form-control" required>
+                                        <select name="occupation" class="form-control" required>
                                             <option value="participant">Regular Participant</option>
                                             <option value="mobilization">Mobilization</option>
                                             <option value="media">Communications/Media</option>
@@ -90,11 +81,12 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="follow_campaign" name="follow_campaign" value="1">
-                                        <label class="custom-control-label small" for="follow_campaign" style="padding-top: 4px;">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label small" for="customCheck1" style="padding-top: 4px;">
                                             Stay up to date with our campaign activities
                                         </label>
                                     </div>
+                                    {{-- <p class="small mb-0" style="padding-top: 2px;">Stay up to date on our campaign activities</p> --}}
                                     <input type="submit" class="o-btn o-btn-primary-opp mt-3 float-right" role="button" value="I'm ready!">
                                 </div>
                             </div>
@@ -121,6 +113,14 @@
     <section class="main-page sec3 section">
         <div class="join-us mt-lg-5 ">
             <div class="row justify-content-center">
+                {{-- <div class="col-md-4 sp-quotes">
+                    <p class="quote">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, rerum?"
+                    </p>
+                    <p class="author">
+                    <span>-</span> Hon. Shina Peller
+                    </p>
+                </div> --}}
                 <div class="col-md-12">
                     <div class="bills">
                         <p class="quote">Bills Passed</p>
@@ -193,27 +193,27 @@
                 </div>
             </div>
             <div class="gallery-item cursor" onclick="openModal();currentSlide(5)">
-                <img src="{{asset('img/project-aged widows (3).jpg')}}" alt="">
+                <img src="{{asset('img/project-borehole (3).jpg')}}" alt="">
                 <div class="overlay">
-                    <p>Support for Aged and widows</p>
+                    <p>1 of the 18 Boreholes built across the federal constituency after the election</p>
                 </div>
             </div>
             <div class="gallery-item cursor" onclick="openModal();currentSlide(6)">
-                <img src="{{asset('img/project-empowerment-of-100 (4).jpg')}}" alt="">
+                <img src="{{asset('img/project-borehole (4).jpg')}}" alt="">
                 <div class="overlay">
-                    <p>First Ever Town Hall Feedback Meeting/Empowerment of Over 100 people</p>
+                    <p>1 of the 18 Boreholes built across the federal constituency after the election</p>
                 </div>
             </div>
             <div class="gallery-item cursor" onclick="openModal();currentSlide(7)">
-                <img src="{{asset('img/project-farmers-empowerment (1).jpg')}}" alt="">
+                <img src="{{asset('img/project-streetlight (3).jpg')}}" alt="">
                 <div class="overlay">
-                    <p>Empowerment of over one thousand, five hundred farmers in his constituency</p>
+                    <p>Street Light at Kara Road, Koso Iseyin Local Government, Iseyin.</p>
                 </div>
             </div>
             <div class="gallery-item cursor" onclick="openModal();currentSlide(8)">
-                <img src="{{asset('img/project-health-intervention (1).jpg')}}" alt="">
+                <img src="{{asset('img/project-school (2).jpg')}}" alt="">
                 <div class="overlay">
-                    <p>Donation of ambulances and other vital medical equipment to health centers.</p>
+                    <p>A block of 6 classroom at Muslim Grammar School, Iseyin Local Government, Iseyin.</p>
                 </div>
             </div>
         </div>

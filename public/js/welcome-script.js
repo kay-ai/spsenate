@@ -45,15 +45,17 @@ $(document).ready(function() {
         if ($('.sec1').isOnScreen()) {
             $('.sec1 .o-card').addClass('animate__animated animate__delay-1s animate__slow animate__fadeInRight');
             $('.sec1 .fadeLeft').addClass('animate__animated animate__delay-1s animate__slow animate__fadeInLeft');
+            $('.sec1 .fadeUp').addClass('animate__animated animate__delay-1s animate__slow animate__fadeInUp');
         } else {
             $('.sec1 .o-card').removeClass('animate__animated animate__delay-1s animate__slow animate__fadeInRight');
             $('.sec1 .fadeLeft').removeClass('animate__animated animate__delay-1s animate__slow animate__fadeInLeft');
+            $('.sec1 .fadeUp').removeClass('animate__animated animate__delay-1s animate__slow animate__fadeInUp');
         }
 
         if ($('.sec2').isOnScreen()) {
-            $('.sec2 .o-card').addClass('animate__animated animate__delay-2s animate__fadeInLeft');
+            $('.sec2 .o-card').addClass('animate__animated animate__delay-1s animate__slow animate__fadeInLeft');
         } else {
-            $('.sec2 .o-card').removeClass('animate__animated animate__delay-2s animate__fadeInLeft');
+            $('.sec2 .o-card').removeClass('animate__animated animate__delay-1s animate__slow animate__fadeInLeft');
         }
     });
 });
