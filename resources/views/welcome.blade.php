@@ -48,7 +48,7 @@
                         <span>-</span> George Jean Nathan
                     </p>
                     <div class="ballot-print d-flex fadeUp">
-                        <img class="accord-party-logo" src="{{asset('img/accord-party.jpg')}}">
+                        <img class="accord-party-logo" src="{{asset('img/Accord-party.jpg')}}">
                         <img class="fingerprint" src="{{asset('img/Fingerprint.png')}}">
                         <div class="election-text mt-2">
                             <p>2023</p>
