@@ -21,6 +21,14 @@ $(document).ready(function() {
     let container = $('.section-container');
     let lastScrollY = container.scrollTop();
 
+    $('.showLoading').click(function (){
+        Swal.fire({
+            title: 'Please Wait !',
+            text: 'This should not take long',
+            allowOutsideClick: false,
+        }); swal.showLoading();
+    });
+
     $('.sp-fixed-item').addClass('sp-fixed-item-pinned');
     container.on("scroll", function(e) {
 

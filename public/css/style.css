@@ -838,10 +838,11 @@ nav.navbar{
 
 .main-page.sec3 .quote{
     padding-right: unset;
+    font-weight: 800;
 }
 
 .bills .owl-carousel .item{
-    background: #032f4bf0;
+    background: #090a0af0;
     padding: 20px;
     border-radius: 15px;
     width: 280px;
@@ -1017,7 +1018,7 @@ nav.navbar{
 
 .main-page.sec3{
     border-bottom: 2px solid #032f4b;
-    min-height: 80vh;
+    min-height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1070,6 +1071,9 @@ nav.navbar{
     opacity: 1;
 }
 
+.gallery .gallery-item .overlay p{
+    margin: auto;
+}
 
 .gallery .gallery-item .overlay{
     position: absolute;
@@ -1552,5 +1556,67 @@ nav.navbar{
     .mySlides img {
         height: 100%;
         max-width: 100%;
+    }
+  }
+
+  /* Verify Email */
+
+  .verify-email{
+    display: flex;
+    height: 95vh;
+    align-items: center;
+  }
+
+  .verify-email .o-card-row{
+    width: 100%;
+  }
+
+  .verify-email .heading-1{
+    margin-left: unset !important;
+    text-align: center;
+  }
+
+  .verify-email .join-form-row p{
+    font-size: 20px;
+  }
+
+  .verify-email .email-box{
+    width: 100%;
+    padding: 5px;
+    background: #8080804d;
+    font-size: 35px;
+    color: #032f4b;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .swal2-loader{
+    border-color: #032f4b transparent #ffa010 transparent !important;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .verify-email .heading-1 {
+        margin-top: -55px;
+    }
+
+    .verify-email .o-card-row{
+        width: unset;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .verify-email .email-box {
+        font-size: 18px;
+    }
+
+    .verify-email .join-form-row p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .verify-email .heading-1 {
+        font-size: 45px;
+        margin-top: -25px;
     }
   }

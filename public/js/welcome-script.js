@@ -22,6 +22,16 @@ $(document).ready(function() {
     let container = $('.section-container');
     let lastScrollY = container.scrollTop();
 
+    $('.showLoading').submit(function(){
+        if($(this).valid()){
+            Swal.fire({
+                title: 'Please Wait !',
+                text: 'This should not take long',
+                allowOutsideClick: false,
+            }); swal.showLoading();
+        }
+    });
+
     container.on("scroll", function(e) {
 
         if (container.scrollTop() > ($(window).height())) {

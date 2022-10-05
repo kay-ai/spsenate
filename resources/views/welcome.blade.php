@@ -2,7 +2,7 @@
 
 @section('content')
 @include('includes.lightbox')
-
+@include('includes.messages')
     <section class="hero-overlay section">
         <div class="new-nav d-flex justify-content-between">
             <a href="/bio" class="nav-names left shadow-sm animate__animated animate__fadeInLeft animate__slow">
@@ -61,7 +61,9 @@
                     <div class="o-card card shadow">
                         <p class="heading-1" id="volunteer-anchor"><span>J</span>oin Us</p>
                         <img src="{{asset('img/accord-logo.png')}}" class="accord-logo" alt="accord-logo">
-                        <form action="#" method="post">
+                        <form action="{{route('store.volunteer')}}" class="showLoading" method="POST" enctype="multipart/form-data">
+                            @method('POST')
+                            @csrf
                             <div class="join-form-row row p-lg-5 pt-0">
                                 <div class="col-md-12">
                                     <div class="form-group">
@@ -81,10 +83,10 @@
                                     <div class="form-group">
                                         <label for="">Areas of Interest*</label>
                                         <select name="specialty" class="form-control" required>
-                                            <option value="participant">Regular Participant</option>
-                                            <option value="mobilization">Mobilization</option>
-                                            <option value="media">Communications/Media</option>
-                                            <option value="finance">Finance</option>
+                                            <option value="Regular Participant">Regular Participant</option>
+                                            <option value="Mobilization">Mobilization</option>
+                                            <option value="Media/Communications">Communications/Media</option>
+                                            <option value="Finance">Finance</option>
                                         </select>
                                     </div>
                                 </div>

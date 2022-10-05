@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVolunteersTable extends Migration
+class CreateVerifyTokensTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateVolunteersTable extends Migration
      */
     public function up()
     {
-        Schema::create('volunteers', function (Blueprint $table) {
+        Schema::create('verify_tokens', function (Blueprint $table) {
             $table->id();
-            $table->string('full_name')->nullable();
-            $table->string('email')->unique();
-            $table->string('email_verified_at')->nullable();
-            $table->string('specialty');
-            $table->string('follow_campaign')->default('0');
+            $table->string('email');
+            $table->string('token');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateVolunteersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('volunteers');
+        Schema::dropIfExists('verify_tokens');
     }
 }
