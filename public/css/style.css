@@ -1168,7 +1168,7 @@ nav.navbar{
 }
 
 .footer{
-    height: 500px;
+    height: 450px;
     background-color: #ffa010f7;
     position: relative;
 }
@@ -1237,9 +1237,17 @@ nav.navbar{
 .footer-bottom{
     position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 70px;
     width: 100%;
     background: #e48a03ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-bottom a{
+    color: #032f4b;
 }
 
 @media screen and (max-width: 500px) {
