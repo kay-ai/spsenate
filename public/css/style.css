@@ -1620,3 +1620,7 @@ nav.navbar{
         margin-top: -25px;
     }
   }
+
+.animate__delay-500ms{
+    animation-delay: 400ms;
+}
