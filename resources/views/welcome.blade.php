@@ -52,24 +52,32 @@
                         <img class="fingerprint" src="{{asset('img/Fingerprint.png')}}">
                         <div class="election-text mt-2">
                             <p>2023</p>
-                            <p>SENETORIAL</p>
+                            <p>SENATORIAL</p>
                             <p>ELECTION</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 flex-break">
                     <div class="o-card card shadow">
-                        <p class="heading-1" id="volunteer-anchor"><span>J</span>oin Us</p>
-                        <img src="{{asset('img/accord-logo.png')}}" class="accord-logo" alt="accord-logo">
+                        <p class="heading-1" id="volunteer-anchor"><span>V</span>olunteer</p>
+                        <img src="{{asset('img/shinayo2023.png')}}" class="accord-logo" alt="shinapeller-logo">
                         <form action="{{route('store.volunteer')}}" class="showLoading" method="POST" enctype="multipart/form-data">
                             @method('POST')
                             @csrf
-                            <div class="join-form-row row p-lg-5 pt-0">
-                                <div class="col-md-12">
+                            <div class="join-form-row row">
+                                <h4 class="col-md-12">Support <b>Shina Peller</b></h4>
+                                <div class="col-md-6">
                                     <div class="form-group">
-                                    <label for="">Email*</label>
+                                    <label for="email">Email*</label>
                                     <input type="text"
                                         class="form-control" name="email" id="" aria-describedby="helpId" placeholder="johndoe@email.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="phone">Phone Number*</label>
+                                    <input type="text"
+                                        class="form-control" name="phone" id="" aria-describedby="helpId" placeholder="e.g 08000000000" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -81,12 +89,13 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="">Areas of Interest*</label>
+                                        <label for="">Area of Interest*</label>
                                         <select name="specialty" class="form-control" required>
                                             <option value="Regular Participant">Regular Participant</option>
                                             <option value="Mobilization">Mobilization</option>
                                             <option value="Media/Communications">Communications/Media</option>
                                             <option value="Finance">Finance</option>
+                                            <option value="Others">Others</option>
                                         </select>
                                     </div>
                                 </div>
@@ -125,7 +134,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <div class="bills">
-                        <p class="quote">Bills Passed</p>
+                        <p class="quote">Bills & Motions</p>
                         <div class="owl-carousel owl-theme">
                             <div class="item shadow-sm">
                                 <p class="bills-text">A motion on the need to tackle the scourge of rape and sexual offences in Nigeria. This has subsequently prompted the federal government to launch first ever National Sexual Offence Register in the country.</p>
@@ -134,7 +143,7 @@
                                 <p class="bills-text">A petition was raised on the dilapidated roads of Iseyin/Oyo and Okeho/Iganna road. This is being complemented by underground work, which will attract results soon.</p>
                             </div>
                             <div class="item shadow-sm">
-                                <p class="bills-text">A bill seeking amendment to the Universal Basic Education Act 2004. It has passed through first reading.</p>
+                                <p class="bills-text">A bill seeking amendment to the Universal Basic Education Act 2004.</p>
                             </div>
                             <div class="item shadow-sm">
                                 <p class="bills-text">Motion on the need to reinvigorate the National Orientation Agency for impactful discharge of its mandate.</p>
@@ -146,7 +155,7 @@
                                 <p class="bills-text">Motion on the urgent need to Revamp Ado-Awaye Suspended Lake.</p>
                             </div>
                             <div class="item shadow-sm">
-                                <p class="bills-text">Bank Employees etc (Declaration of Assets)(Amendment) Bill 2021. Passed through second reading.</p>
+                                <p class="bills-text">Bank Employees etc (Declaration of Assets)(Amendment) Bill 2021.</p>
                             </div>
                             <div class="item shadow-sm">
                                 <p class="bills-text">Nigeria Security and Civil Defence Corps (Repeal and Transition) Bill 2022</p>
@@ -155,7 +164,7 @@
                                 <p class="bills-text">Motion on the need to resuscitate Ikere-Gorge Dam in Iseyin.</p>
                             </div>
                             <div class="item shadow-sm">
-                                <p class="bills-text">A bill for an act to amend the National Orientation Agency Act, it has also passed through first reading.</p>
+                                <p class="bills-text">A bill for an act to amend the National Orientation Agency Act.</p>
                             </div>
                         </div>
                     </div>
@@ -259,41 +268,41 @@
             e.preventDefault();
         });
         function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
+            document.getElementById("myModal").style.display = "block";
+        }
 
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+        function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+        }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
     </script>
 @endpush
 

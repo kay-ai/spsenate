@@ -790,10 +790,10 @@ nav.navbar{
 }
 
 .accord-logo{
-    width: 25%;
+    width: 18%;
     position: absolute;
-    right: -30px;
-    top: -3%;
+    right: 12px;
+    top: 1%;
     opacity: 0.4;
 }
 
@@ -1582,6 +1582,14 @@ nav.navbar{
   .verify-email .heading-1{
     margin-left: unset !important;
     text-align: center;
+  }
+
+  .join-form-row{
+    padding: 1rem 3rem !important;
+  }
+
+  .join-form-row h4{
+    margin-bottom: 20px !important;
   }
 
   .verify-email .join-form-row p{

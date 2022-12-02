@@ -18,16 +18,19 @@ class VolunteerController extends Controller
         $request->validate([
             'email' => 'required|unique:volunteers|email|max:50',
             'full_name' => 'string|max:50',
-            'follow_campaign' => 'string|max:50'
+            'follow_campaign' => 'string|max:50',
+            'phone' => 'required'
         ],
         [
             'email.unique' => 'Another Volunteer has registered with this email.',
             'email.required' => 'Please supply a valid email account',
+            'phone.required' => 'Please supply a valid Phone Number',
         ]);
 
         $volunteer = new Volunteer();
         $volunteer->full_name = $request->full_name;
         $volunteer->email = $request->email;
+        $volunteer->phone = $request->phone;
         $volunteer->specialty = $request->specialty;
         if($request->has('follow_campaign')){
             $volunteer->follow_campaign = $request->follow_campaign;
