@@ -22,6 +22,14 @@ Route::get('/bio', function () {
     return view('bio');
 })->name('bio');
 
+Route::get('/donate', function () {
+    return view('donate');
+})->name('donate');
+
+Route::get('/journey', function () {
+    return view('journey');
+})->name('journey');
+
 Route::post('/store/volunteer', [VolunteerController::class, 'store'])->name('store.volunteer');
 
 Route::get('/email/verify/{token}', [VolunteerController::class, 'verify_email_page'])->name('email.verify.get');

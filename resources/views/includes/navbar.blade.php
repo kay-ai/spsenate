@@ -18,8 +18,11 @@
             <li class="nav-item {{$activePage == 'volunteer' ? 'active' : ''}}">
                 <a class="nav-link" href="/#volunteer-anchor">Volunteer</a>
             </li>
+            <li class="nav-item {{$activePage == 'journey' ? 'active' : ''}}">
+                <a class="nav-link" href="/journey">Journey So Far</a>
+            </li>
             <li class="nav-item">
-                <a id="" class="btn px-3 join-us-btn shadow-sm" href="#" role="button">Donate</a>
+                <a id="" class="btn px-3 join-us-btn shadow-sm" href="/donate" role="button">Donate</a>
             </li>
         </ul>
     </div>

@@ -41,7 +41,7 @@
                 <a href="/" class="link">Home</a>
                 <a href="/#volunteer-anchor" class="link">Volunteer</a>
                 <a href="/bio" class="link">Bio</a>
-                <a href="#" class="link">Donate</a>
+                <a href="/donate" class="link">Donate</a>
             </div>
         </div>
     </div>
