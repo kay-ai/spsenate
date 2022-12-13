@@ -22,6 +22,9 @@
                 <a class="nav-link" href="/journey">Journey So Far</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="https://ayedero.com/">Ayedero News</a>
+            </li>
+            <li class="nav-item">
                 <a id="" class="btn px-3 join-us-btn shadow-sm" href="/donate" role="button">Donate</a>
             </li>
         </ul>
