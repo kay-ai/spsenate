@@ -343,6 +343,160 @@ nav.navbar{
     text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
+.badges{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    top: 70px;
+}
+
+.badges .words{
+    display: block;
+    position: absolute;
+    font-size: 2vw;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.badges .words.left.one{
+    left: 12%;
+    top: 50%;
+    animation: fadeInOut1 50s ease reverse forwards infinite;
+    opacity: 0;
+}
+
+.badges .words.right.one{
+    right: 20%;
+    top: 50%;
+    animation: fadeInOut1 50s ease reverse forwards infinite;
+    animation-delay: 2500ms;
+    opacity: 0;
+}
+
+.badges .words.left.two{
+    left: 10%;
+    top: 60%;
+    animation: fadeInOut2 50s ease reverse forwards infinite;
+    opacity: 0;
+}
+
+.badges .words.right.two{
+    right: 15%;
+    top: 60%;
+    animation: fadeInOut2 50s ease reverse forwards infinite;
+    animation-delay: 2500ms;
+    opacity: 0;
+}
+
+.badges .words.left.three{
+    left: 10%;
+    top: 75%;
+    animation: fadeInOut3 50s ease reverse forwards infinite;
+    opacity: 0;
+}
+
+.badges .words.right.three{
+    right: 10%;
+    top: 75%;
+    animation: fadeInOut3 50s ease reverse forwards infinite;
+    animation-delay: 2500ms;
+    opacity: 0;
+}
+
+.badges .words.left.four{
+    left: 5%;
+    top: 35%;
+    animation: fadeInOut4 50s ease reverse forwards infinite;
+    opacity: 0;
+}
+
+.badges .words.right.four{
+    right: 5%;
+    top: 35%;
+    animation: fadeInOut4 50s ease reverse forwards infinite;
+    animation-delay: 2500ms;
+    opacity: 0;
+}
+
+.badges .words.left.five{
+    left: 10%;
+    top: 75%;
+    animation: fadeInOut5 50s ease reverse forwards infinite;
+    animation-delay: 1000ms;
+    opacity: 0;
+}
+
+.badges .words.right.five{
+    right: 5%;
+    top: 90%;
+    animation: fadeInOut5 50s ease reverse forwards infinite;
+    animation-delay: 3000ms;
+    opacity: 0;
+}
+
+.badges .words.left.six{
+    left: 5%;
+    top: 105%;
+    animation: fadeInOut6 50s ease reverse forwards infinite;
+    opacity: 0;
+    animation-delay: 3000ms;
+}
+
+.badges .words.right.six{
+    right: 5%;
+    top: 70%;
+    animation: fadeInOut6 50s ease reverse forwards infinite;
+    opacity: 0;
+    animation-delay: 1800ms;
+}
+
+@keyframes fadeInOut1 {
+    0% { opacity: 0 }
+    1% { opacity: 1 }
+    14% {opacity: 1 }
+    16% { opacity: 0 }
+}
+
+@keyframes fadeInOut2 {
+    0% { opacity: 0 }
+    14% {opacity: 0 }
+    16% { opacity: 1 }
+    30% { opacity: 1 }
+    33% { opacity: 0 }
+}
+
+@keyframes fadeInOut3 {
+    0% { opacity: 0 }
+    30% {opacity: 0 }
+    33% {opacity: 1 }
+    46% { opacity: 1 }
+    48% { opacity: 0 }
+}
+
+@keyframes fadeInOut4 {
+    0% { opacity: 0 }
+    46% { opacity: 0 }
+    48% { opacity: 1 }
+    64% { opacity: 1 }
+    65% { opacity: 0 }
+}
+
+@keyframes fadeInOut5 {
+    0% { opacity: 0 }
+    64% { opacity: 0 }
+    66% { opacity: 1 }
+    80% { opacity: 1 }
+    83% { opacity: 0 }
+}
+
+@keyframes fadeInOut6 {
+    80% { opacity: 0; transform: translateX(10px); }
+    83% { opacity: 1 }
+    99% { opacity: 1 }
+    100% { opacity: 0 }
+}
+
 @media screen and (max-width: 1000px) {
     .navbar-brand{
         font-size: 2.2vw !important;
@@ -518,6 +672,69 @@ nav.navbar{
     .new-nav .nav-names {
         font-size: 15px;
     }
+
+    .badges .words.left.one{
+        left: 5%;
+        top: 50%;
+
+    }
+
+    .badges .words.right.one{
+        right: 5%;
+        top: 50%;
+    }
+
+    .badges .words.left.two{
+        left: 3%;
+        top: 64%;
+    }
+
+    .badges .words.right.two{
+        right: 15%;
+        top: 45%;
+    }
+
+    .badges .words.left.three{
+        left: 1%;
+        top: 60%;
+
+    }
+
+    .badges .words.right.three{
+        right: 6%;
+        top: 25%;
+    }
+
+    .badges .words.left.four{
+        left: 2%;
+        top: 64%;
+
+    }
+
+    .badges .words.right.four{
+        right: 5%;
+        top: 35%;
+    }
+
+    .badges .words.left.five{
+        left: 6%;
+        top: 50%;
+    }
+
+    .badges .words.right.five{
+        right: 5%;
+        top: 30%;
+    }
+
+    .badges .words.left.six{
+        left: 5%;
+        top: 70%;
+    }
+
+    .badges .words.right.six{
+        right: 5%;
+        top: 50%;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -534,159 +751,7 @@ nav.navbar{
     }
 }
 
-.badges{
-    position: absolute;
-    width: 100%;
-    height: 50vh;
-    top: 70px;
-}
 
-.badges .words{
-    display: block;
-    position: absolute;
-    font-size: 2vw;
-    font-weight: 800;
-    color: #fff;
-    text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-}
-
-.badges .words.left.one{
-    left: 12%;
-    top: 50%;
-    animation: fadeInOut1 50s ease reverse forwards infinite;
-    opacity: 0;
-}
-
-.badges .words.right.one{
-    right: 20%;
-    top: 50%;
-    animation: fadeInOut1 50s ease reverse forwards infinite;
-    animation-delay: 2500ms;
-    opacity: 0;
-}
-
-.badges .words.left.two{
-    left: 10%;
-    top: 60%;
-    animation: fadeInOut2 50s ease reverse forwards infinite;
-    opacity: 0;
-}
-
-.badges .words.right.two{
-    right: 15%;
-    top: 60%;
-    animation: fadeInOut2 50s ease reverse forwards infinite;
-    animation-delay: 2500ms;
-    opacity: 0;
-}
-
-.badges .words.left.three{
-    left: 10%;
-    top: 75%;
-    animation: fadeInOut3 50s ease reverse forwards infinite;
-    opacity: 0;
-}
-
-.badges .words.right.three{
-    right: 10%;
-    top: 75%;
-    animation: fadeInOut3 50s ease reverse forwards infinite;
-    animation-delay: 2500ms;
-    opacity: 0;
-}
-
-.badges .words.left.four{
-    left: 5%;
-    top: 35%;
-    animation: fadeInOut4 50s ease reverse forwards infinite;
-    opacity: 0;
-}
-
-.badges .words.right.four{
-    right: 5%;
-    top: 35%;
-    animation: fadeInOut4 50s ease reverse forwards infinite;
-    animation-delay: 2500ms;
-    opacity: 0;
-}
-
-.badges .words.left.five{
-    left: 10%;
-    top: 75%;
-    animation: fadeInOut5 50s ease reverse forwards infinite;
-    animation-delay: 1000ms;
-    opacity: 0;
-}
-
-.badges .words.right.five{
-    right: 5%;
-    top: 90%;
-    animation: fadeInOut5 50s ease reverse forwards infinite;
-    animation-delay: 3000ms;
-    opacity: 0;
-}
-
-.badges .words.left.six{
-    left: 5%;
-    top: 105%;
-    animation: fadeInOut6 50s ease reverse forwards infinite;
-    opacity: 0;
-    animation-delay: 3000ms;
-}
-
-.badges .words.right.six{
-    right: 5%;
-    top: 70%;
-    animation: fadeInOut6 50s ease reverse forwards infinite;
-    opacity: 0;
-    animation-delay: 1800ms;
-}
-
-@keyframes fadeInOut1 {
-    0% { opacity: 0 }
-    1% { opacity: 1 }
-    14% {opacity: 1 }
-    16% { opacity: 0 }
-}
-
-@keyframes fadeInOut2 {
-    0% { opacity: 0 }
-    14% {opacity: 0 }
-    16% { opacity: 1 }
-    30% { opacity: 1 }
-    33% { opacity: 0 }
-}
-
-@keyframes fadeInOut3 {
-    0% { opacity: 0 }
-    30% {opacity: 0 }
-    33% {opacity: 1 }
-    46% { opacity: 1 }
-    48% { opacity: 0 }
-}
-
-@keyframes fadeInOut4 {
-    0% { opacity: 0 }
-    46% { opacity: 0 }
-    48% { opacity: 1 }
-    64% { opacity: 1 }
-    65% { opacity: 0 }
-}
-
-@keyframes fadeInOut5 {
-    0% { opacity: 0 }
-    64% { opacity: 0 }
-    66% { opacity: 1 }
-    80% { opacity: 1 }
-    83% { opacity: 0 }
-}
-
-@keyframes fadeInOut6 {
-    80% { opacity: 0; transform: translateX(10px); }
-    83% { opacity: 1 }
-    99% { opacity: 1 }
-    100% { opacity: 0 }
-}
 
 
 /* Main Content */
@@ -884,6 +949,14 @@ nav.navbar{
     color: #ffa900;
 }
 
+.join-form-row{
+    padding: 1rem 3rem;
+  }
+
+  .join-form-row h4{
+    margin-bottom: 20px;
+  }
+
 @media screen and (max-width: 1000px) {
     .bills .quote{
         text-align: center;
@@ -971,7 +1044,7 @@ nav.navbar{
     }
 
     .heading-1 {
-        font-size: 75px;
+        font-size: 60px;
         margin-top: -45px;
         text-align: center;
         margin-left: unset !important;
@@ -979,6 +1052,11 @@ nav.navbar{
 
     .join-form-row{
         padding: 1.5rem;
+        padding-top: 0;
+    }
+
+    .join-form-row h4{
+        text-align: center;
     }
 
     .o-card{
@@ -1534,39 +1612,6 @@ nav.navbar{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  @media screen and (max-width: 1000px) {
-    .mySlides {
-        max-width: 100%;
-        width: unset;
-      }
-
-      #myModal .modal-content {
-        margin-top: 10%;
-        height: 60%;
-    }
-    .mySlides img {
-        height: 100%;
-    }
-  }
-
-  @media screen and (max-width: 500px) {
-    .mySlides {
-        max-width: 100%;
-        max-height: 70%;
-        width: unset;
-    }
-
-    #myModal .modal-content {
-        margin-top: 20%;
-        height: 60%;
-    }
-
-    .mySlides img {
-        height: 100%;
-        max-width: 100%;
-    }
-  }
-
   /* Verify Email */
 
   .verify-email{
@@ -1582,14 +1627,6 @@ nav.navbar{
   .verify-email .heading-1{
     margin-left: unset !important;
     text-align: center;
-  }
-
-  .join-form-row{
-    padding: 1rem 3rem !important;
-  }
-
-  .join-form-row h4{
-    margin-bottom: 20px !important;
   }
 
   .verify-email .join-form-row p{
@@ -1612,6 +1649,19 @@ nav.navbar{
   }
 
   @media screen and (max-width: 1000px) {
+    .mySlides {
+        max-width: 100%;
+        width: unset;
+      }
+
+      #myModal .modal-content {
+        margin-top: 10%;
+        height: 60%;
+    }
+    .mySlides img {
+        height: 100%;
+    }
+
     .verify-email .heading-1 {
         margin-top: -55px;
     }
@@ -1622,6 +1672,22 @@ nav.navbar{
   }
 
   @media screen and (max-width: 500px) {
+    .mySlides {
+        max-width: 100%;
+        max-height: 70%;
+        width: unset;
+    }
+
+    #myModal .modal-content {
+        margin-top: 20%;
+        height: 60%;
+    }
+
+    .mySlides img {
+        height: 100%;
+        max-width: 100%;
+    }
+
     .verify-email .email-box {
         font-size: 18px;
     }
