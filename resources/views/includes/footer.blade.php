@@ -1,22 +1,22 @@
 <div class="top-spacer"></div>
 <div class="spacer section">
-    {{-- <div class="logo-carousel owl-theme">
-        <div class="item shadow-sm">
+    <div class="logo-carousel owl-carousel owl-theme">
+        <div class="item">
             <img src="{{asset('img/logos/lgi-logo.png')}}" alt="">
         </div>
-        <div class="item shadow-sm">
+        <div class="item">
             <img src="{{asset('img/logos/aquila_oil-logo.png')}}" alt="">
         </div>
-        <div class="item shadow-sm">
+        <div class="item">
             <img src="{{asset('img/logos/aquila_BP-logo.png')}}" alt="">
         </div>
-        <div class="item shadow-sm">
+        <div class="item">
             <img src="{{asset('img/logos/aquila_group-logo.png')}}" alt="">
         </div>
-        <div class="item shadow-sm">
+        <div class="item">
             <img src="{{asset('img/logos/we2gedang-logo.png')}}" alt="">
         </div>
-    </div> --}}
+    </div>
 </div>
 <div class="footer section">
     <div class="row justify-content-center pt-5 mx-3">
@@ -47,7 +47,7 @@
     </div>
     <div class="footer-bottom">
         <p class="mb-0">Designed by B-TECH: <b><a href="tel:+2349053143790">09053143790</a></b></p>
-        <p class="mb-0"><b>Email: </b><a href="mailto:blossomtechnologies@gmail.com">blossomtechnologies@gmail.com</a></p>
+        <p class="mb-0"><b>Email: </b><a href="mailto:blossomtechnologiesltd@gmail.com">blossomtechnologiesltd@gmail.com</a></p>
     </div>
 </div>
 
@@ -56,8 +56,8 @@
         var owl = $('.logo-carousel');
         owl.owlCarousel({
             loop:true,
-            margin:10,
-            nav:true,
+            margin:30,
+            nav:false,
             autoplay:true,
             autoplayTimeout:5000,
             autoplayHoverPause:true,

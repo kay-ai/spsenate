@@ -124,7 +124,7 @@
                 <div class="col-md-12">
                     <div class="bills">
                         <p class="quote">Bills Passed</p>
-                        <div class="owl-carousel owl-theme">
+                        <div class="bills-carousel owl-carousel owl-theme">
                             <div class="item shadow-sm">
                                 <p class="bills-text">A motion on the need to tackle the scourge of rape and sexual offences in Nigeria. This has subsequently prompted the federal government to launch first ever National Sexual Offence Register in the country.</p>
                             </div>
@@ -222,7 +222,7 @@
 
 @push('js-bottom')
     <script>
-        var owl = $('.owl-carousel');
+        var owl = $('.bills-carousel');
         owl.owlCarousel({
             loop:true,
             margin:10,
