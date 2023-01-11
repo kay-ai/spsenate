@@ -58,7 +58,7 @@
             loop:true,
             margin:30,
             nav:false,
-            autoplay:true,
+            autoplay:false,
             autoplayTimeout:5000,
             autoplayHoverPause:true,
             responsive:{

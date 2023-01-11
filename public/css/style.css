@@ -1651,6 +1651,21 @@ nav.navbar{
     border-color: #032f4b transparent #ffa010 transparent !important;
   }
 
+    .logo-carousel .item img{
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .logo-carousel .item{
+        height: 150px;
+        width: 260px;
+    }
+
+    .logo-carousel .owl-item{
+        display: flex;
+        justify-content: center;
+    }
+
   @media screen and (max-width: 1000px) {
     .mySlides {
         max-width: 100%;
@@ -1704,18 +1719,13 @@ nav.navbar{
         font-size: 45px;
         margin-top: -25px;
     }
+
+    .logo-carousel .item {
+        height: 125px;
+        width: 200px;
+    }
   }
 
 .animate__delay-500ms{
     animation-delay: 400ms;
-}
-
-.logo-carousel .item img{
-    height: 100%;
-    object-fit: contain;
-}
-
-.logo-carousel .item{
-    height: 150px;
-    width: 260px;
 }
