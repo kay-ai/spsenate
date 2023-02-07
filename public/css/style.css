@@ -1687,6 +1687,10 @@ nav.navbar{
     .verify-email .o-card-row{
         width: unset;
     }
+
+    #donate-img{
+        width: 100%;
+    }
   }
 
   @media screen and (max-width: 500px) {
