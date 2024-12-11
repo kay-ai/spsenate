@@ -6,6 +6,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!--<< Favcion >>-->
+        <link rel="shortcut icon" href="{{asset('img/shinayo2023.png')}}">
+
         {{-- Owl Carousel --}}
         <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
         <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
