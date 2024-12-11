@@ -22,7 +22,6 @@
     <div class="row justify-content-center pt-5 mx-3">
         <div class="text-center">
             <p class="text1">SHINA PELLER</p>
-            <p class="text2">OYO NORTH <span>2023</span></p>
             <div class="social-icons mt-5">
                 <a href="https://web.facebook.com/honourableshinapeller" class="an-icon">
                     <i class="fab fa-facebook" aria-hidden="true"></i>
@@ -39,15 +38,13 @@
             </div>
             <div class="footer-links">
                 <a href="/" class="link">Home</a>
-                <a href="/#volunteer-anchor" class="link">Volunteer</a>
                 <a href="/bio" class="link">Bio</a>
                 <a href="/donate" class="link">Donate</a>
             </div>
         </div>
     </div>
     <div class="footer-bottom">
-        <p class="mb-0">Designed by B-TECH: <b><a href="tel:+2349053143790">09053143790</a></b></p>
-        <p class="mb-0"><b>Email: </b><a href="mailto:blossomtechnologiesltd@gmail.com">blossomtechnologiesltd@gmail.com</a></p>
+        <p class="mb-0">Designed by: <b><a href="mailto:appnovetetechnologies@gmail.com">appnovetetechnologies@gmail.com</a></p>
     </div>
 </div>
 

@@ -3,58 +3,119 @@
 @section('content')
 @include('includes.lightbox')
 @include('includes.messages')
-    <section class="hero-section section">
-        <img src="{{asset('img/hero-bg.png')}}" class="bg-img" alt="shina-peller">
-        <div class="overlay">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <img class="navbar-brand-logo" src="{{asset('img/shinayo2023.png')}}">
-                <button id="navbarCollapse" class="navbar-toggler d-lg-none active" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="collapse navbar-collapse nav-content" id="collapsibleNavId" style="justify-content: space-between">
-                    <div style="width: 35px;"></div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/bio">Bio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/#volunteer-anchor">Volunteer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/journey">Journey So Far</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://ayedero.com/">Ayedero News</a>
-                        </li>
-                    </ul>
-
-                    <div class="social-icons">
-                        <a href="https://web.facebook.com/honourableshinapeller" class="an-icon">
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://twitter.com/ShinaPeller" class="an-icon">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.instagram.com/shinapeller" class="an-icon">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                        </a>
+    <section class="hero-overlay section">
+        <div class="new-nav d-flex justify-content-between">
+            <a href="/bio" class="nav-names left shadow-sm animate__animated animate__fadeInLeft animate__slow">
+                <p> HON. SHINA PELLER </p>
+            </a>
+            <a href="/bio" class="nav-names right shadow-sm animate__animated animate__fadeInRight animate__slow">
+                <p> FOR OYO NORTH </p>
+            </a>
+        </div>
+        <div class="content-div">
+            <p class="vote-text animate__animated animate__fadeInDown">VOTE</p>
+            <div class="badges">
+                <span class="words left one">An Entreprenuer</span>
+                <span class="words right one">A Peace Maker</span>
+                <span class="words right six">Voice of the Common Man</span>
+                <span class="words left two">Organizer Peller Unity Cup</span>
+                <span class="words right two">A Businessman</span>
+                <span class="words left three">The Ayedero of Yoruba Land</span>
+                <span class="words right three">The Akinrogun of Epe Land</span>
+                <span class="words left four">The Mayegun of Igbobi-Sabe</span>
+                <span class="words right four">Aare Gbobaniyi of Iseyin</span>
+                <span class="words left five">A Philanthropist</span>
+                <span class="words right five">Founder AQUILA GROUP</span>
+                <span class="words left six">A Leader</span>
+            </div>
+            <img class="animate__animated animate__slideInUp animate__slow" src="{{asset('img/sp-bg.png')}}">
+        </div>
+        <div class="hero-bottom shadow-sm animate__animated animate__slideInUp">
+            <p>FOR SENATE</p>
+            <div class="bottom-line">
+                <p>THE PEOPLE'S CHOICE</p>
+            </div>
+        </div>
+    </section>
+    <section class="main-page sec1 section">
+        <div class="join-us mt-lg-5 ">
+            <div class="row justify-content-center">
+                <div class="col-md-6 flex-break">
+                    <p class="quote mb-0 fadeLeft">
+                        "Bad officials are elected by good citizens who don't vote"
+                    </p>
+                    <p class="author mb-1 fadeLeft">
+                        <span>-</span> George Jean Nathan
+                    </p>
+                    <div class="ballot-print d-flex fadeUp">
+                        <img class="accord-party-logo" src="{{asset('img/Accord-party.jpg')}}">
+                        <img class="fingerprint" src="{{asset('img/Fingerprint.png')}}">
+                        <div class="election-text mt-2">
+                            <p>2023</p>
+                            <p>SENATORIAL</p>
+                            <p>ELECTION</p>
+                        </div>
                     </div>
                 </div>
-            </nav>
-            <div class="bottom-text">
-                <p id="name" class="animate__animated animate__slideInUp animate__slow">Hon. Shina Abiola Peller</p>
-                <div class="scroll-down animate__animated animate__slideInDown animate__slow">
-                   <p>SCROLL DOWN</p>
-                   <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                <div class="col-md-6 flex-break">
+                    <div class="o-card card shadow">
+                        <p class="heading-1" id="volunteer-anchor"><span>V</span>olunteer</p>
+                        <img src="{{asset('img/shinayo2023.png')}}" class="accord-logo" alt="shinapeller-logo">
+                        <form action="{{route('store.volunteer')}}" class="showLoading" method="POST" enctype="multipart/form-data">
+                            @method('POST')
+                            @csrf
+                            <div class="join-form-row row">
+                                <h4 class="col-md-12">Support <b>Shina Peller</b></h4>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="email">Email*</label>
+                                    <input type="text"
+                                        class="form-control" name="email" id="" aria-describedby="helpId" placeholder="johndoe@email.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                    <label for="phone">Phone Number*</label>
+                                    <input type="text"
+                                        class="form-control" name="phone" id="" aria-describedby="helpId" placeholder="e.g 08000000000" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                    <label for="">Full Name*</label>
+                                    <input type="text"
+                                        class="form-control" name="full_name" id="" aria-describedby="helpId" placeholder="John Doe" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="">Area of Interest*</label>
+                                        <select name="specialty" class="form-control" required>
+                                            <option value="Regular Participant">Regular Participant</option>
+                                            <option value="Mobilization">Mobilization</option>
+                                            <option value="Media/Communications">Communications/Media</option>
+                                            <option value="Finance">Finance</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="follow_campaign" name="follow_campaign" value="1">
+                                        <label class="custom-control-label small" for="follow_campaign" style="padding-top: 4px;">
+                                            Stay up to date with our campaign activities
+                                        </label>
+                                    </div>
+                                    <input type="submit" class="o-btn o-btn-primary-opp mt-3 float-right" role="button" value="I'm ready!">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
     <section class="main-page sec2 section">
         <div class="o-card my-5">

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    font-family: 'Nunito', sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
     overflow-x: hidden;
     background-image: url('../img/sp-main-bg.jpg');
     background-size: cover;
@@ -55,7 +56,7 @@ body::-webkit-scrollbar {
 
 nav.navbar{
     padding: 10px 100px 10px 100px;
-    background-color: #ffffff80;
+    background-color: #ffffffe6;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -76,8 +77,8 @@ nav.navbar{
 }
 
 .join-us-btn{
-    background-color: #032f4b !important;
-    border-color: #032f4b !important;
+    background-color: #032f4a !important;
+    border-color: #032f4a !important;
     color: #fff !important;
 }
 
@@ -159,14 +160,15 @@ nav.navbar{
     height: 45px;
 }
 
-.navbar .nav-item.active{
-    border-bottom: 3px solid #FFA010;
+.navbar .nav-item.active .nav-link{
+    color:#FFA010 !important;
 }
 
 .navbar .nav-link{
-    color: #033F63 !important;
+    color: #032f4a !important;
     font-size: 14px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .navbar .nav-item{
@@ -215,8 +217,81 @@ nav.navbar{
     padding-top: 4px !important;
 }
 
-.hero{
+.hero-section{
     height: 100vh;
+    overflow: hidden;
+}
+
+.hero-section .overlay{
+    background: linear-gradient(180deg, #00000000 0%, #0000001f 50%, #000000ed 100%);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction: column;
+    font-family: "Cinzel", serif;
+}
+
+.hero-section .navbar-brand-logo{
+    filter: invert(75%) brightness(110%) contrast(125%) saturate(25%);
+    height: 55px;
+}
+
+.hero-section .overlay .navbar{
+    position: relative;
+    background-color: #ffffff00;
+    backdrop-filter: unset;
+    padding-top: 20px;
+}
+
+.hero-section .overlay .navbar .nav-link{
+    color: #fff !important;
+    font-family: "Montserrat", sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px !important;
+    transition: all 0.5s;
+}
+
+.hero-section .overlay .navbar .nav-link.active{
+    color: #f8a902 !important;
+}
+
+.hero-section .overlay .navbar .nav-link:hover{
+    color: #f8a902 !important;
+}
+
+.hero-section .an-icon{
+    padding: 10px;
+}
+
+.hero-section .an-icon:hover{
+    color: #f8a902 !important;
+}
+
+.hero-section .bg-img{
+    width: 99.45%;
+    position: fixed;
+}
+
+.hero-section .overlay .bottom-text{
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.hero-section .overlay .bottom-text #name{
+    font-size: 50px;
+    color: white;
+}
+
+.hero-section .overlay .scroll-down{
+    color: #f8a902;
+    font-weight: 500;
+    font-size: 13px !important;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 /* Welcome Page CSS */
@@ -497,6 +572,19 @@ nav.navbar{
     100% { opacity: 0 }
 }
 
+
+@media (min-width: 720px) and (max-width: 1300px) {
+    nav.navbar {
+        padding: 10px;
+    }
+
+    .hero-section .bg-img{
+        height: 100%;
+        left: -54vw;
+        width: unset;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .navbar-brand{
         font-size: 2.2vw !important;
@@ -603,12 +691,6 @@ nav.navbar{
     }
 }
 
-@media screen and (max-width: 768px) {
-    nav.navbar{
-        padding: 10px 80px;
-    }
-}
-
 @media screen and (max-width: 500px) {
     nav.navbar{
         padding: 15px 20px;
@@ -627,6 +709,12 @@ nav.navbar{
         left: -3vh ;
         height: 75vh ;
         top: 60px ;
+    }
+
+    .hero-section .bg-img{
+        height: 100%;
+        left: -100vw;
+        width: unset;
     }
 
     .hero-overlay .content-div .vote-text {
@@ -759,7 +847,7 @@ nav.navbar{
     border-bottom: 2px solid #FFA010;
 }
 .main-page{
-    background: #f9fafbf0;
+    background: #000000f0;
     position: relative;
     padding : 100px;
 }
@@ -793,6 +881,7 @@ nav.navbar{
     padding-right: 80px;
     margin-top: 45px;
     text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    font-family: "Cinzel", serif;
 }
 
 .author{
@@ -1066,7 +1155,7 @@ nav.navbar{
 
 /* Why Vote section */
 .main-page.sec2{
-    background-color: #032f4bed;
+    background-color: #010614ed;
     border-bottom: 2px solid #ffa010;
 }
 
@@ -1103,11 +1192,11 @@ nav.navbar{
 }
 
 .main-page.sec4{
-    background: #303234f0;
+    background: #010614ed;
     border-bottom: 2px solid #fff;
-    background: linear-gradient(45deg, rgba(48,50,52,0.93) 0%, rgba(77,78,80,0.93) 15%, rgba(109,110,112,0.93) 30%, rgba(139,140,141,0.93) 45%, rgba(174,174,175,0.93) 60%, rgba(214,214,214,0.93) 75%, rgba(232,232,232,0.93) 90%, rgba(255,255,255,0.93) 100%);
+    /* background: linear-gradient(45deg, rgba(48,50,52,0.93) 0%, rgba(77,78,80,0.93) 15%, rgba(109,110,112,0.93) 30%, rgba(139,140,141,0.93) 45%, rgba(174,174,175,0.93) 60%, rgba(214,214,214,0.93) 75%, rgba(232,232,232,0.93) 90%, rgba(255,255,255,0.93) 100%); */
     background-size: 1000%;
-    animation: bg-animation 45s infinite;
+    /* animation: bg-animation 45s infinite; */
 }
 
 .sec4 .text1{
@@ -1116,6 +1205,7 @@ nav.navbar{
     text-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     color: #FFA010;
     margin-bottom: 0;
+    font-family: "Cinzel", serif;
 }
 
 .sec4 .text2{
@@ -1246,6 +1336,7 @@ nav.navbar{
     display: flex;
     align-items: center;
     padding: 0 50px;
+    position: relative;
 }
 
 .footer{
